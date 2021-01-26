@@ -1,0 +1,399 @@
+/* デフォルト設定 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  font-size: 1.4rem;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "MSPゴシック", "MS PGothic", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* デフォルト設定 */
+
+/* ******main-wrapper****** */
+
+.main-wrapper {
+  background-image: url(../images/博多とんこつラーメン１.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-container {
+  padding-top: 200px;
+  text-align: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.main-container h1 {
+  font-size: 8rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.main-container p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.main-container p::before,
+.main-container p::after {
+  content: '';
+  border: 1px solid #fff;
+  margin: 10px;
+}
+
+.login-session {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.login-session .btn {
+  width: 200px;
+  padding: 20px 0px;
+  margin: 0px 25px;
+  background-color: rgb(10, 134, 236);
+  font-size: 2.0rem;
+}
+
+.login-session .btn:hover {
+  opacity: 0.8;
+}
+
+/* ******main-wrapper****** */
+
+
+/* ******header-main-wrapper****** */
+
+.header-wrapper {
+  display: flex;
+  height: 100px;
+}
+
+.header-left {
+  width: 25%;
+  text-align: center;
+  font-size: 2.0rem;
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-right {
+  width: 75%;
+  background-color: rgba(248, 248, 255, 0.3);
+  opacity: 0.8;
+}
+
+.session-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+  height: 100%;
+}
+
+.session-group a, .session-group p {
+  position: relative;
+  font-size: 2.0rem;
+  padding: 40px 15px 0;
+  margin: 0px 15px;
+  color: black;
+}
+
+.session-group a:hover {
+  opacity: 0.4;
+}
+
+.main-icon-size:before {
+  font-size: 2.3rem;
+  margin-right: 10px;
+}
+
+
+/* ******header-main-wrapper****** */
+
+/* ******post-index****** */
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 85px;
+  padding-bottom: 25px;
+}
+
+.container h1 {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 85px;
+}
+
+.container h1::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+  left: 0px;
+  border-bottom: 3px solid black;
+}
+
+.container article {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container article h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+
+.container article h2::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -15px;
+  left: 0px;
+  border-bottom: 3px solid black;
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 5px;
+}
+
+.l-post {
+  width: 32.3%;
+  margin: 0 5px 30px;
+}
+
+.l-post a {
+  display: block;
+}
+
+.post-name {
+  height: 50px;
+  background-color: coral;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.post-name a {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.post-picture {
+  height: 200px;
+  background-color: skyblue;
+}
+
+.post-picture span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 20%;
+}
+
+.post-items {
+  height: 200px;
+  padding-top: 20px;
+  background-color: blanchedalmond;
+}
+
+.post-items li {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+
+/* ******post-index****** */
+
+/* ******post-new******** */
+
+.container-form {
+  padding: 10px 45px 50px;
+  /* background-color: rgba(55, 127, 80, 0.2); */
+  border: 1px solid black;
+}
+
+.form-box {
+  margin: 50px 0;
+}
+
+.form-box h5 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.caution {
+  margin-left: 10px;
+  padding: 0 5px;
+  font-size: 2.0rem;
+  color: #fff;
+}
+
+.mandatory {
+  background-color: red;
+}
+
+.any {
+  background-color: gray;
+}
+
+.note {
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+
+input[type="text"], select {
+  width: 92%;
+  height: 50px;
+  margin-left: 4%;
+  padding: 0 20px;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  background-color: rgb(247,247,247);
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.form-submit input[type="submit"] {
+  background-color: rgba(206,206,206, 1.0);
+  padding: 15px 200px;
+  font-size: 2.0rem;
+  border: none;
+  color: #fff;
+  font-weight: 200;
+  border-radius: 45px;
+}
+
+.form-submit input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+.form-submit input[type="submit"]:focus {
+  outline: 0;
+}
+
+/* ******post-new******** */
+
+/* ******post-show******** */
+
+.post-show {
+  text-align: center;
+}
+
+.post-show-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button a {
+  background-color: rgba(206,206,206, 1.0);
+  font-weight: 200;
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 0 20px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+}
+
+.button a:hover {
+  opacity: 0.6;
+}
+
+.post-table .post-show h2 {
+  margin-bottom: 15px;
+}
+
+.table-show-container {
+  justify-content: center;
+}
+
+.l-post-show {
+  width: 50%;
+}
+
+.post-show-name {
+  height: 85px;
+  padding-top: 30px;
+}
+
+.post-show-picture {
+  height: 300px;
+}
+
+.post-show-items {
+  height: 300px;
+  padding-top: 66px;
+}
+
+.post-show-items li {
+  font-size: 2.6rem;
+}
+
+/* ******user-show******** */
+
+.user-container {
+  display: flex;
+  padding: 25px 5px;
+  margin-bottom: 50px;
+  border: 1px solid #00000024;
+}
+
+.user-picture {
+  width: 30%;
+  background-color: greenyellow;
+  text-align: center;
+}
+
+.user-picture span {
+  display: inline-block;
+  margin-top: 90px;
+  font-size: 3.0rem;
+}
+
+.user-items {
+  width: 70%;
+  padding: 10px;
+  padding-left: 30px;
+  /* background-color: rgb(157, 221, 173); */
+}
+
+.user-items li {
+  font-size: 2.0rem;
+  margin: 15px 0;
+}
+
+.user-items span {
+  margin-left: 10px;
+}
