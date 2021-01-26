@@ -26,7 +26,7 @@ ul, li {
 
 /* デフォルト設定 */
 
-/* ******main-wrapper****** */
+/* ******top-wrapper****** */
 
 .top-wrapper {
   background-image: url(/images/博多とんこつラーメン１.jpg);
@@ -79,7 +79,11 @@ ul, li {
   opacity: 0.8;
 }
 
-/* ******main-wrapper****** */
+.header-left span {
+  color: #fff;
+}
+
+/* ******top-wrapper****** */
 
 
 /* ******header-main-wrapper****** */
