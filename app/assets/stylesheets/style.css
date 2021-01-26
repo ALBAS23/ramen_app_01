@@ -28,14 +28,14 @@ ul, li {
 
 /* ******main-wrapper****** */
 
-.main-wrapper {
+.top-wrapper {
   background-image: url(../images/博多とんこつラーメン１.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.main-container {
+.top-container {
   padding-top: 200px;
   text-align: center;
   height: 100%;
@@ -43,19 +43,19 @@ ul, li {
   text-align: center;
 }
 
-.main-container h1 {
+.top-container h1 {
   font-size: 8rem;
   color: #fff;
   margin-bottom: 30px;
 }
 
-.main-container p {
+.top-container p {
   color: #fff;
   font-size: 2rem;
 }
 
-.main-container p::before,
-.main-container p::after {
+.top-container p::before,
+.top-container p::after {
   content: '';
   border: 1px solid #fff;
   margin: 10px;
