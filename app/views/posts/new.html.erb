@@ -21,7 +21,7 @@
         </div>
          <div class="form-box">
           <h5>ジャンル<span class="caution mandatory">必須</span></h5>
-          <%= select_tag(:genre, options_for_select([['選択してください', 0], ['味噌', 1], ['醤油', 2]])) %>
+          <%= form.collection_select(:genre, Genre.all, :id, :name, {}) %>
         </div>
         <div class="form-box">
           <h5>ひとコト<span class="caution mandatory">必須</span></h5>
@@ -29,7 +29,7 @@
         </div>
         <div class="form-box">
           <h5>都道府県<span class="caution mandatory">必須</span></h5>
-          <%= select_tag(:prefecture, options_for_select([['選択してください', 0], ['北海道', 1], ['青森', 2]])) %>
+          <%= form.collection_select(:prefecture, Prefecture.all, :id, :name, {}) %>
         </div>
         <div class="form-box">
           <h5>店舗場所<span class="caution any">任意</span></h5>
