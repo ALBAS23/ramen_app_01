@@ -274,7 +274,7 @@ ul, li {
   margin-left: 50px;
 }
 
-input[type="text"], select {
+input[type="text"], input[type="email"], input[type="password"], select {
   width: 92%;
   height: 50px;
   margin-left: 4%;
