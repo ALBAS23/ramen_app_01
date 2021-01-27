@@ -20,8 +20,8 @@ Things you may want to cover:
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
-| nickname                 | string             | null: false, uniqueness: true   |
-| e-mail                   | string             | null: false, uniqueness: true   |
+| nickname                 | string             | null: false, unique: true   |
+| e-mail                   | string             | null: false, unique: true   |
 | encrypted-password       | string             | null: false, max_length: 8      |
 | prefecture               | integer            |                                 |
 
@@ -31,7 +31,7 @@ Things you may want to cover:
 - has_one :user_data
 
 
-## user_data table
+## profiles table
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|

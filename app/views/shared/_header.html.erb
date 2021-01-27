@@ -5,7 +5,9 @@
   <div class="header-right">
     <nav class="session-group">
       <p>ユーザー名</p>
-      <a href="#"><i class="fa fa-sign-out main-icon-size"></i>ログアウト</a>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <i class="fa fa-sign-out main-icon-size"></i>ログアウト
+      <% end %>
       <a href="#"><i class="fa fa-child main-icon-size"></i>マイページ</a>
     </nav>
   </div>

@@ -26,16 +26,16 @@ ul, li {
 
 /* デフォルト設定 */
 
-/* ******main-wrapper****** */
+/* ******top-wrapper****** */
 
-.main-wrapper {
-  background-image: url(../images/博多とんこつラーメン１.jpg);
+.top-wrapper {
+  background-image: url(/images/博多とんこつラーメン１.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.main-container {
+.top-container {
   padding-top: 200px;
   text-align: center;
   height: 100%;
@@ -43,19 +43,19 @@ ul, li {
   text-align: center;
 }
 
-.main-container h1 {
+.top-container h1 {
   font-size: 8rem;
   color: #fff;
   margin-bottom: 30px;
 }
 
-.main-container p {
+.top-container p {
   color: #fff;
   font-size: 2rem;
 }
 
-.main-container p::before,
-.main-container p::after {
+.top-container p::before,
+.top-container p::after {
   content: '';
   border: 1px solid #fff;
   margin: 10px;
@@ -79,7 +79,11 @@ ul, li {
   opacity: 0.8;
 }
 
-/* ******main-wrapper****** */
+.header-left span {
+  color: #fff;
+}
+
+/* ******top-wrapper****** */
 
 
 /* ******header-main-wrapper****** */
@@ -270,7 +274,7 @@ ul, li {
   margin-left: 50px;
 }
 
-input[type="text"], select {
+input[type="text"], input[type="email"], input[type="password"], select {
   width: 92%;
   height: 50px;
   margin-left: 4%;
@@ -281,7 +285,7 @@ input[type="text"], select {
   background-color: rgb(247,247,247);
 }
 
-.form-submit {
+.form-submit, .form-btn {
   text-align: center;
   margin-top: 70px;
 }
@@ -296,7 +300,22 @@ input[type="text"], select {
   border-radius: 45px;
 }
 
-.form-submit input[type="submit"]:hover {
+.form-btn {
+  margin-top: 30px;
+}
+
+.form-btn-back {
+  background-color: rgba(185,206,206, 1.0);
+  padding: 20px 215px;
+  font-size: 2.0rem;
+  border: none;
+  color: #fff;
+  font-weight: 200;
+  border-radius: 45px;
+  cursor: auto;
+}
+
+.form-submit input[type="submit"]:hover, .form-btn-back:hover {
   opacity: 0.6;
 }
 
@@ -397,3 +416,18 @@ input[type="text"], select {
 .user-items span {
   margin-left: 10px;
 }
+
+/* ******* error_message ******* */
+
+#error_explanation h2 {
+  display: none;
+}
+
+#error_explanation ul {
+  margin-top: 30px;
+  margin-bottom: -15px;
+  font-size: 1.6rem;
+  color: red;
+}
+
+/* ******* error_message ******* */

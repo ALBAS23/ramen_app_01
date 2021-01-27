@@ -1,0 +1,28 @@
+
+<%= render 'shared/header_two' %>
+
+<section class="container post-new">
+  <h1>ログインページ</h1>
+  <article class="container-form">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      
+      <div class="form-box">
+        <h5>メールアドレス<span class="caution mandatory">必須</span></h5>
+        <%= f.email_field :email %>
+      </div>
+      <div class="form-box">
+        <h5>パスワード<span class="caution mandatory">必須</h5>
+        <%= f.password_field :password, autocomplete: "new-password", placeholder: "半角英数字８文字以上で入力してください" %>
+      </div>
+      <div class="form-submit">
+        <%= f.submit "ログイン" %>
+      </div>
+      <div class="form-btn">
+        <%=link_to '戻る', top_posts_path, class: "form-btn-back" %>
+      </div>
+    <% end %>
+  </article>
+</section>
+
+<%= render "users/shared/links" %>
