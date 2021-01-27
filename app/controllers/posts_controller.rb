@@ -6,6 +6,10 @@ class PostsController < ApplicationController
   end
 
   def top
+    @posts = Post.new
+  end
+
+  def new
 
   end
 
