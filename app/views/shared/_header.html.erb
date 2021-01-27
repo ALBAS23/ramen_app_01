@@ -4,7 +4,7 @@
   <% end %>
   <div class="header-right">
     <nav class="session-group">
-      <p>ユーザー名</p>
+      <p><%= current_user.nickname %>さん</p>
       <%= link_to destroy_user_session_path, method: :delete do %>
         <i class="fa fa-sign-out main-icon-size"></i>ログアウト
       <% end %>

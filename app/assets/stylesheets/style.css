@@ -431,3 +431,40 @@ input[type="text"], input[type="email"], input[type="password"], select {
 }
 
 /* ******* error_message ******* */
+
+/* ******* post-new ******* */
+
+.post-group {
+  position: relative;
+}
+
+.post-btn {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: #fff;
+  font-size: 2.2rem;
+  border: none;
+  padding: 17px 35px;
+  background-color: rgba(250, 88, 18, 0.8);
+  border-radius: 10px;
+  cursor: default;
+}
+
+.post-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* ******* post-new ******* */
+
+/* ******* top-image ******* */
+
+.picture-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  opacity: 0.7;
+}
+
+/* ******* top-image ******* */
