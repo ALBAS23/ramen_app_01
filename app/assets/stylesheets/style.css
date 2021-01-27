@@ -416,3 +416,18 @@ input[type="text"], input[type="email"], input[type="password"], select {
 .user-items span {
   margin-left: 10px;
 }
+
+/* ******* error_message ******* */
+
+#error_explanation h2 {
+  display: none;
+}
+
+#error_explanation ul {
+  margin-top: 30px;
+  margin-bottom: -15px;
+  font-size: 1.6rem;
+  color: red;
+}
+
+/* ******* error_message ******* */
