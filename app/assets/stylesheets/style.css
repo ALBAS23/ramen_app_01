@@ -285,7 +285,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
   background-color: rgb(247,247,247);
 }
 
-.form-submit {
+.form-submit, .form-btn {
   text-align: center;
   margin-top: 70px;
 }
@@ -300,7 +300,22 @@ input[type="text"], input[type="email"], input[type="password"], select {
   border-radius: 45px;
 }
 
-.form-submit input[type="submit"]:hover {
+.form-btn {
+  margin-top: 50px;
+}
+
+.form-btn-back {
+  background-color: rgba(185,206,206, 1.0);
+  padding: 20px 215px;
+  font-size: 2.0rem;
+  border: none;
+  color: #fff;
+  font-weight: 200;
+  border-radius: 45px;
+  cursor: auto;
+}
+
+.form-submit input[type="submit"]:hover, .form-btn-back:hover {
   opacity: 0.6;
 }
 
