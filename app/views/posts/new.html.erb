@@ -1,0 +1,44 @@
+
+<%= render 'shared/header' %>
+
+<section class="container post-new">
+  <div class="post-group">
+    <h1>新規投稿ページ</h1>
+    <%= link_to '戻る', root_path, class: "post-btn post-back-btn" %>
+    <article class="container-form">
+      <%= form_with(model: @posts, local: true) do |form| %>
+        <div class="form-box">
+          <h5>メニュー<span class="caution mandatory">必須</span></h5>
+          <%= form.text_field :menu %>
+        </div>
+        <div class="form-box">
+          <h5>店舗名<span class="caution mandatory">必須</span></h5>
+          <%= form.text_field :store %>
+        </div>
+        <div class="form-box">
+          <h5>値段<span class="caution mandatory">必須</span><span class="note">注意）半角数字で入力してください</span></h5>
+          <%= form.text_field :price %>
+        </div>
+         <div class="form-box">
+          <h5>ジャンル<span class="caution mandatory">必須</span></h5>
+          <%= select_tag(:genre, options_for_select([['選択してください', 0], ['味噌', 1], ['醤油', 2]])) %>
+        </div>
+        <div class="form-box">
+          <h5>ひとコト<span class="caution mandatory">必須</span></h5>
+          <%= form.text_field :word %>
+        </div>
+        <div class="form-box">
+          <h5>都道府県<span class="caution mandatory">必須</span></h5>
+          <%= select_tag(:prefecture, options_for_select([['選択してください', 0], ['北海道', 1], ['青森', 2]])) %>
+        </div>
+        <div class="form-box">
+          <h5>店舗場所<span class="caution any">任意</span></h5>
+          <%= form.text_field :place %>
+        </div>
+        <div class="form-submit">
+          <%= form.submit "新規投稿" %>
+        </div>
+      <% end %>
+    </article>    
+  </div>
+</section>
