@@ -6,7 +6,7 @@
     <h1>新規投稿ページ</h1>
     <%= link_to '戻る', root_path, class: "post-btn post-back-btn" %>
     <article class="container-form">
-      <%= form_with(model: @posts, local: true) do |form| %>
+      <%= form_with(model: @post, local: true) do |form| %>
         <div class="form-box">
           <h5>メニュー<span class="caution mandatory">必須</span></h5>
           <%= form.text_field :menu %>
@@ -21,7 +21,7 @@
         </div>
          <div class="form-box">
           <h5>ジャンル<span class="caution mandatory">必須</span></h5>
-          <%= form.collection_select(:genre, Genre.all, :id, :name, {}) %>
+          <%= form.collection_select(:genre_id, Genre.all, :id, :name, {}) %>
         </div>
         <div class="form-box">
           <h5>ひとコト<span class="caution mandatory">必須</span></h5>
@@ -29,7 +29,7 @@
         </div>
         <div class="form-box">
           <h5>都道府県<span class="caution mandatory">必須</span></h5>
-          <%= form.collection_select(:prefecture, Prefecture.all, :id, :name, {}) %>
+          <%= form.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}) %>
         </div>
         <div class="form-box">
           <h5>店舗場所<span class="caution any">任意</span></h5>
