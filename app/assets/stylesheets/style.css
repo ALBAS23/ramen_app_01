@@ -208,8 +208,14 @@ ul, li {
 }
 
 .post-picture {
-  height: 200px;
+  height: 250px;
   background-color: skyblue;
+}
+
+.post-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .post-picture span {
