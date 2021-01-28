@@ -12,19 +12,41 @@
   <article>
     <h2>最新投稿順</h2>
     <div class="table-container">
-      <div class="l-post">
-        <h3 class="post-name"><a href="#">投稿者</a></h3>
-        <a href="#">
-          <div class="post-picture"><span>写真</span></div>
-          <ul class="post-items">
-            <li>メニュー：<span>ラーメン中盛</span></li>
-            <li>店名：<span>環２家<span></li>
-            <li>値段：<span> ¥ 10000</span></li>
-            <li>ジャンル：<span>家系</span></li>
-            <li>ひとコト：<span>世界一うまい！！</span></li>
-          </ul>
-        </a>
-      </div>
+      <% @posts_created_at.each do |post| %>
+        <div class="l-post">
+          <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
+          <a href="#">
+            <div class="post-picture"><%= image_tag post.image%></div>
+            <ul class="post-items">
+              <li>メニュー：<span><%=post.menu%></span></li>
+              <li>店名：<span><%=post.store%><span></li>
+              <li>値段：<span> ¥ <%=post.price%></span></li>
+              <li>ジャンル：<span><%=post.genre.name%></span></li>
+              <li>ひとコト：<span><%=post.word%></span></li>
+            </ul>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </article>
+  <article>
+    <h2>値段順</h2>
+    <div class="table-container">
+      <% @posts_price.each do |post| %>
+        <div class="l-post">
+          <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
+          <a href="#">
+            <div class="post-picture"><%= image_tag post.image%></div>
+            <ul class="post-items">
+              <li>メニュー：<span><%=post.menu%></span></li>
+              <li>店名：<span><%=post.store%><span></li>
+              <li>値段：<span> ¥ <%=post.price%></span></li>
+              <li>ジャンル：<span><%=post.genre.name%></span></li>
+              <li>ひとコト：<span><%=post.word%></span></li>
+            </ul>
+          </a>
+        </div>
+      <% end %>
     </div>
   </article>
 </section>
