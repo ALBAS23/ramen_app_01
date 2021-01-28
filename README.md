@@ -55,9 +55,9 @@ Things you may want to cover:
 | menu                     | string             | null: false                     |
 | store                    | string             | null: false                     |
 | price                    | integer            | null: false                     |
-| genre                    | integer            | null: false                     |
+| genre_id                 | integer            | null: false                     |
 | word                     | string             | null: false                     |
-| prefecture               | integer            | null: false                     |
+| prefecture_id            | integer            | null: false                     |
 | place                    | string             |                                 |
 | user                     | reference          | null: false, foreign_key: true  |
 
