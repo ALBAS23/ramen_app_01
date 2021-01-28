@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_27_232314) do
+ActiveRecord::Schema.define(version: 2021_01_28_000214) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "menu", null: false
     t.string "store", null: false
     t.integer "price", null: false
-    t.integer "genre", null: false
+    t.integer "genre_id", null: false
     t.string "word", null: false
-    t.integer "prefecture", null: false
+    t.integer "prefecture_id", null: false
     t.string "place"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
