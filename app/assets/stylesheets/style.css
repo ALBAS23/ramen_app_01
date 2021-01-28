@@ -285,6 +285,11 @@ input[type="text"], input[type="email"], input[type="password"], select {
   background-color: rgb(247,247,247);
 }
 
+input[type="file"] {
+  margin-left: 4%;
+  font-size: 1.6rem;
+}
+
 .form-submit, .form-btn {
   text-align: center;
   margin-top: 70px;
