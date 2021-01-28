@@ -197,7 +197,7 @@ ul, li {
 
 .post-name {
   height: 50px;
-  background-color: coral;
+  background-color: rgba(255, 165, 130, 0.8);
   text-align: center;
   padding-top: 17px;
 }
@@ -209,7 +209,6 @@ ul, li {
 
 .post-picture {
   height: 250px;
-  background-color: skyblue;
 }
 
 .post-picture img {
