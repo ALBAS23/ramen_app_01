@@ -226,7 +226,6 @@ ul, li {
 }
 
 .post-items {
-  height: 200px;
   padding-top: 20px;
   background-color: blanchedalmond;
 }
@@ -238,7 +237,6 @@ ul, li {
   font-size: 1.7rem;
   font-weight: bold;
 }
-
 
 /* ******post-index****** */
 
@@ -341,9 +339,8 @@ input[type="file"] {
   text-align: center;
 }
 
-.post-show-section {
-  display: flex;
-  justify-content: space-between;
+.container .post-show h2:before {
+  display: none;
 }
 
 .button a {
@@ -382,12 +379,12 @@ input[type="file"] {
 }
 
 .post-show-items {
-  height: 300px;
-  padding-top: 66px;
+  padding: 45px 0;
 }
 
 .post-show-items li {
   font-size: 2.6rem;
+  padding: 10px; 
 }
 
 /* ******user-show******** */
@@ -463,6 +460,10 @@ input[type="file"] {
 
 .post-btn:hover {
   opacity: 0.8;
+}
+
+.post-btn-edit {
+  right:  170px;
 }
 
 
