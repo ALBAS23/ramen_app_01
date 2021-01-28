@@ -15,7 +15,7 @@
       <% @posts_created_at.each do |post| %>
         <div class="l-post">
           <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
-          <a href="#">
+          <%=link_to "/posts/#{post.id}" do %>
             <div class="post-picture"><%= image_tag post.image%></div>
             <ul class="post-items">
               <li>メニュー：<span><%=post.menu%></span></li>
@@ -24,7 +24,7 @@
               <li>ジャンル：<span><%=post.genre.name%></span></li>
               <li>ひとコト：<span><%=post.word%></span></li>
             </ul>
-          </a>
+          <% end %>
         </div>
       <% end %>
     </div>

@@ -23,6 +23,10 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
   private 
 
   def move_to_top_pages
