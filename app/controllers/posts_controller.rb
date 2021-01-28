@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :move_to_top_pages, except: :top
 
   def index
-
+    @posts = Post.order("created_at DESC")
   end
 
   def top
