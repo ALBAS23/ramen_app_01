@@ -238,6 +238,10 @@ ul, li {
   font-weight: bold;
 }
 
+.post-items li #word {
+  line-height: 25px;
+}
+
 /* ******post-index****** */
 
 /* ******post-new******** */
@@ -375,7 +379,7 @@ input[type="file"] {
 }
 
 .post-show-picture {
-  height: 300px;
+  height: 365px;
 }
 
 .post-show-items {

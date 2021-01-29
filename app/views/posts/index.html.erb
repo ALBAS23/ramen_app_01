@@ -26,7 +26,7 @@
               <li>店名：<span><%=post.store%><span></li>
               <li>値段：<span> ¥ <%=post.price%></span></li>
               <li>ジャンル：<span><%=post.genre.name%></span></li>
-              <li>ひとコト：<span><%=post.word%></span></li>
+              <li>ひとコト：<span id="word"><%=post.word%></span></li>
             </ul>
           <% end %>
         </div>
@@ -39,7 +39,7 @@
       <% @posts_price.each do |post| %>
         <div class="l-post">
           <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
-          <a href="#">
+          <%=link_to "/posts/#{post.id}" do %>
             <% if post.image.attached? %>
               <div class="post-picture"><%= image_tag post.image %></div>
             <% else %>
@@ -50,9 +50,9 @@
               <li>店名：<span><%=post.store%><span></li>
               <li>値段：<span> ¥ <%=post.price%></span></li>
               <li>ジャンル：<span><%=post.genre.name%></span></li>
-              <li>ひとコト：<span><%=post.word%></span></li>
+              <li>ひとコト：<span  id="word"><%=post.word%></span></li>
             </ul>
-          </a>
+          <% end %>
         </div>
       <% end %>
     </div>

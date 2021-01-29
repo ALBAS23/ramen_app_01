@@ -13,16 +13,15 @@
       <div class="l-post l-post-show">
         <a href="#">
           <% if @post.image.attached? %>
-            <div class="post-picture"><%= image_tag @post.image %></div>
+            <div class="post-picture post-show-picture"><%= image_tag @post.image %></div>
           <% else %>
-            <div class="post-picture"></div>
+            <div class="post-picture post-show-picture"></div>
           <% end %>
           <ul class="post-items post-show-items">
             <li>メニュー：<span><%=@post.menu%></span></li>
             <li>店名：<span><%=@post.store%><span></li>
             <li>値段：<span> ¥ <%=@post.price%></span></li>
             <li>ジャンル：<span><%=@post.genre.name%></span></li>
-            <!-- <li>ひとコト：<span>世界一うまい！！</span></li> -->
           </ul>
         </a>
       </div>
