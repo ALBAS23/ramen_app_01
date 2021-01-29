@@ -27,6 +27,20 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def edit 
+    @post = Post.find(params[:id])
+  end
+
+  def update 
+    binding.pry
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
   private 
 
   def move_to_top_pages
