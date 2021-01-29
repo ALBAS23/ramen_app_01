@@ -16,7 +16,11 @@
         <div class="l-post">
           <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
           <%=link_to "/posts/#{post.id}" do %>
-            <div class="post-picture"><%= image_tag post.image%></div>
+            <% if post.image.attached? %>
+              <div class="post-picture"><%= image_tag post.image %></div>
+            <% else %>
+              <div class="post-picture"></div>
+            <% end %>
             <ul class="post-items">
               <li>メニュー：<span><%=post.menu%></span></li>
               <li>店名：<span><%=post.store%><span></li>
@@ -36,7 +40,11 @@
         <div class="l-post">
           <h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
           <a href="#">
-            <div class="post-picture"><%= image_tag post.image%></div>
+            <% if post.image.attached? %>
+              <div class="post-picture"><%= image_tag post.image %></div>
+            <% else %>
+              <div class="post-picture"></div>
+            <% end %>
             <ul class="post-items">
               <li>メニュー：<span><%=post.menu%></span></li>
               <li>店名：<span><%=post.store%><span></li>

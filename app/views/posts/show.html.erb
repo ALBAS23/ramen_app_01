@@ -4,7 +4,7 @@
   <div class="post-show-section post-group">
     <h1><a href="#" style="display: inline-block; color: black;"><%=@post.user.nickname%>さん</a>の投稿</h1>
     <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
-    <%= link_to '削除', edit_post_path(@post), class: "post-btn" %>
+    <%# <%= link_to '削除', edit_post_path(@post), class: "post-btn" %> 
   </div>
 
   <article class="post-show">
@@ -12,7 +12,11 @@
     <div class="table-container table-show-container">
       <div class="l-post l-post-show">
         <a href="#">
-          <div class="post-picture post-show-picture"><%= image_tag @post.image%></div>
+          <% if @post.image.attached? %>
+            <div class="post-picture"><%= image_tag post.image %></div>
+          <% else %>
+            <div class="post-picture"></div>
+          <% end %>
           <ul class="post-items post-show-items">
             <li>メニュー：<span><%=@post.menu%></span></li>
             <li>店名：<span><%=@post.store%><span></li>
