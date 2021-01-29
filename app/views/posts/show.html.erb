@@ -4,7 +4,7 @@
   <div class="post-show-section post-group">
     <h1><a href="#" style="display: inline-block; color: black;"><%=@post.user.nickname%>さん</a>の投稿</h1>
     <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
-    <%# <%= link_to '削除', edit_post_path(@post), class: "post-btn" %> 
+    <%= link_to '削除', post_path(@post), method: :delete, class: "post-btn" %>
   </div>
 
   <article class="post-show">
@@ -13,7 +13,7 @@
       <div class="l-post l-post-show">
         <a href="#">
           <% if @post.image.attached? %>
-            <div class="post-picture"><%= image_tag post.image %></div>
+            <div class="post-picture"><%= image_tag @post.image %></div>
           <% else %>
             <div class="post-picture"></div>
           <% end %>
