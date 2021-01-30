@@ -31,7 +31,7 @@ Things you may want to cover:
 - has_one :user_data
 
 
-## profiles table
+## mypages table
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|

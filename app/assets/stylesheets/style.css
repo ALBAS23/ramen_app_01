@@ -483,3 +483,24 @@ input[type="file"] {
 }
 
 /* ******* top-image ******* */
+
+/* ********************** MyProfile *************************** */
+
+.profile-container {
+  display: flex;
+  height: 800px;
+}
+
+.profile-category-group {
+  width: 20%;
+  background-color: greenyellow;
+  height: 100%;
+}
+
+.profile-main-group {
+  width: 80%;
+  background-color: khaki;
+  height: 100%;
+}
+
+/* ********************** MyProfile *************************** */
