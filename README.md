@@ -31,7 +31,7 @@ Things you may want to cover:
 - has_one :personal
 
 
-## person table
+## people table
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
