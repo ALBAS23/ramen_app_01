@@ -25,7 +25,7 @@
       </div>
       <div class="form-box">
         <h5>現住所<span class="caution any">任意</span></h5>
-        <%= select_tag(:prefecture, options_for_select([['選択してください', 0], ['北海道', 1], ['青森県', 2]])) %>
+        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name) %>
       </div>
       <div class="form-submit">
         <%= f.submit "新規登録" %>
