@@ -36,7 +36,6 @@ Things you may want to cover:
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
 | gender                   | string             | null: false                     |
-| prefecture_id            | integer            | null: false                     |
 | f_store_one              | string             | null: false                     |
 | f_store_two              | string             |                                 |
 | f_store_three            | string             |                                 |
