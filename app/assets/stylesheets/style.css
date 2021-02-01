@@ -649,6 +649,7 @@ input[type="file"] {
   height: 30px;
   padding: 0 10px;
   font-size: 1.6rem;
+  margin-left: 0;
 }
 
 .profile-list-content textarea {
