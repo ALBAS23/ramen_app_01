@@ -10,7 +10,7 @@ class CreatePeople < ActiveRecord::Migration[6.0]
       t.string  :f_topping
       t.text    :self_introduction
       t.references :user, null: false, foreign_key: true
-      t.timestamps
+      t.timestamps  
     end
   end
 end
