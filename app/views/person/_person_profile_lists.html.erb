@@ -11,7 +11,9 @@
     <p>性別<span class="caution profile-any">任意</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.gender %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -19,7 +21,9 @@
     <p>現住所<span class="caution profile-any">任意</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.prefecture.name %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -35,7 +39,9 @@
     <p>お気に入り店舗①<span class="caution profile-caution">必須</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_one %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -43,7 +49,9 @@
     <p>お気に入り店舗②<span class="caution profile-any">任意</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_two %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -51,7 +59,9 @@
     <p>お気に入り店舗③<span class="caution profile-any">任意</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_three %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -59,7 +69,9 @@
     <p>好きなジャンル<span class="caution profile-caution">必須</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.genre.name %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list">
@@ -67,14 +79,18 @@
     <p>好きなトッピング<span class="caution profile-caution">必須</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.f_topping %></p>
+    <% end %>
   </div> 
 </div>
 <div class="profile-list introduction">
   <div class="profile-list-tag">
-    <p>自己紹介文（400文字以内）<span class="caution profile-caution">任意</span></p>
+    <p>自己紹介文（400文字以内）<span class="caution profile-any">任意</span></p>
   </div>
   <div class="profile-list-content">
-    <p></p>
+    <% unless @person.blank? %>
+      <p><%= @person.self_introduction %></p>
+    <% end %>
   </div> 
 </div>
