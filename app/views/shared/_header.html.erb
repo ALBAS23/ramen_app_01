@@ -8,7 +8,9 @@
       <%= link_to destroy_user_session_path, method: :delete do %>
         <i class="fa fa-sign-out main-icon-size"></i>ログアウト
       <% end %>
-      <a href="#"><i class="fa fa-child main-icon-size"></i>マイページ</a>
+      <%= link_to "/person/#{current_user.id}" do %>
+        <i class="fa fa-child main-icon-size"></i>マイページ
+      <% end %>
     </nav>
   </div>
 </header>

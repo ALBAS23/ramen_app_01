@@ -1,0 +1,96 @@
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>ニックネーム</span></p>
+  </div>
+  <div class="profile-list-content">
+    <p><%= @user.nickname %></p>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>メールアドレス</p>
+  </div>
+  <div class="profile-list-content">
+    <p><%= @user.email %></p>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>性別</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.gender %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>現住所</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.prefecture.name %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>お気に入り店舗①</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_one %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>お気に入り店舗②</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_two %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>お気に入り店舗③</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.f_store_three %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>好きなジャンル</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.genre.name %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>好きなトッピング</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.f_topping %></p>
+    <% end %>
+  </div> 
+</div>
+<div class="profile-list introduction">
+  <div class="profile-list-tag">
+    <p>自己紹介文（400文字以内）</p>
+  </div>
+  <div class="profile-list-content">
+    <% unless @person.blank? %>
+      <p><%= @person.self_introduction %></p>
+    <% end %>
+  </div> 
+</div>

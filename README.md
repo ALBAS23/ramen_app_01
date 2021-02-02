@@ -20,29 +20,28 @@ Things you may want to cover:
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
-| nickname                 | string             | null: false, unique: true   |
-| e-mail                   | string             | null: false, unique: true   |
+| nickname                 | string             | null: false, unique: true       |
+| e-mail                   | string             | null: false, unique: true       |
 | encrypted-password       | string             | null: false, max_length: 8      |
-| prefecture               | integer            |                                 |
-
 
 ### Association
 - has_many :posts
-- has_one :user_data
+- has_one :personal
 
 
-## mypages table
+## people table
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
-| family-name              | string             | null: false                     |
-| last-name                | string             | null: false                     |
-| favorite-ramen-one       | string             | null: false                     |
-| favorite-ramen-two       | string             |                                 |
-| favorite-ramen-three     | string             |                                 |
-| favorite-genre           | integer            | null: false                     |
-| favorite-topping         | string             |                                 |
-| user                     | reference          | null: false, foreign_key: true  |
+| gender                   | string             | null: false                     |
+| prefecture_id            | integer            |                                 |
+| f_store_one              | string             | null: false                     |
+| f_store_two              | string             |                                 |
+| f_store_three            | string             |                                 |
+| genre_id                 | integer            | null: false                     |
+| f_topping                | string             |                                 |
+| self_introduction        | text               |                                 |
+| user                     | references         | null: false, foreign_key: true  |
 
 ### Association
 - belongs_to :user
@@ -59,7 +58,7 @@ Things you may want to cover:
 | word                     | string             | null: false                     |
 | prefecture_id            | integer            | null: false                     |
 | place                    | string             |                                 |
-| user                     | reference          | null: false, foreign_key: true  |
+| user                     | references         | null: false, foreign_key: true  |
 
 
 ### Association

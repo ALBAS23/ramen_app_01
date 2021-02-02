@@ -14,4 +14,5 @@ class Genre < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :posts
+  has_many :people
 end

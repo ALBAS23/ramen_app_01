@@ -1,0 +1,13 @@
+<%= render 'shared/header_three'%>
+
+<main>
+  <section class="profile-container">
+    <section class="profile-edit-group">
+      <div class="profile-group">
+        <h1>プロフィール情報編集</h1>
+        <%= link_to '戻る', "/person/#{params[:id]}", class: "profile-btn" %>
+        <%= render 'person/person_profile_form' %>
+      </div>
+    </section>
+  </section>
+</main>

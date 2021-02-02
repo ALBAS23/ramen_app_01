@@ -1,0 +1,75 @@
+<%= form_with(model: @person, url: "/person/#{current_user.id}", method: :PATCH,  local: true, class: 'profile-lists') do |form| %>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>性別<span class="caution profile-any">任意</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.radio_button :gender, :male %>
+      <%= form.label :gender, "男性", {value: :male} %>
+      <%= form.radio_button :gender, :female %>
+      <%= form.label :gender, "女性", {value: :female} %>
+      <%= form.radio_button :gender, :not_confing %>
+      <%= form.label :gender, "設定なし", {value: :not_config} %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>現住所<span class="caution profile-any">任意</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.collection_select(:prefecture_id, Prefecture.all, :id, :name) %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>お気に入り店舗①<span class="caution profile-caution">必須</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.text_field :f_store_one %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>お気に入り店舗②<span class="caution profile-any">任意</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.text_field :f_store_two %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>お気に入り店舗③<span class="caution profile-any">任意</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.text_field :f_store_three %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>好きなジャンル<span class="caution profile-caution">必須</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.collection_select(:genre_id, Genre.all, :id, :name) %>
+    </div> 
+  </div>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>好きなトッピング<span class="caution profile-caution">必須</span></p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.text_field :f_topping %>
+    </div> 
+  </div>
+  <div class="profile-list introduction">
+    <div class="profile-list-tag">
+      <p>自己紹介文（400文字以内）<span class="caution profile-any">任意</span><br>文字数（400/400文字）</p>
+    </div>
+    <div class="profile-list-content">
+      <%= form.text_area :self_introduction %>
+    </div> 
+  </div>
+  <div class="profile-submit">
+    <input type="submit" value="保存">
+  </div>
+<% end %>
+

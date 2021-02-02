@@ -23,10 +23,6 @@
         <h5>パスワード確認用<span class="caution mandatory">必須</span></h5>
         <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "パスワードをもう一度入力してください" %>
       </div>
-      <div class="form-box">
-        <h5>現住所<span class="caution any">任意</span></h5>
-        <%= select_tag(:prefecture, options_for_select([['選択してください', 0], ['北海道', 1], ['青森県', 2]])) %>
-      </div>
       <div class="form-submit">
         <%= f.submit "新規登録" %>
       </div>

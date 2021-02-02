@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       get 'top'
     end
   end 
+  resources :person, only: [:show, :edit, :create, :update]
 end
