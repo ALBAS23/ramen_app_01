@@ -1,11 +1,16 @@
 class User < ApplicationRecord
+  extend ActiveHash::Associations::ActiveRecordExtensions
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :nickname, presence: true, uniqueness: true, format: { with: /\A[a-zA-Z0-9]+\z/}
+  validates :nickname, presence: true, uniqueness: { case_sensitive: true }, format: { with: /\A[a-zA-Z0-9]+\z/}
   validates :password, format: { with: /[a-z\d]{8,}/i}
 
   has_many :posts
+  has_one :person
+  belongs_to :prefecture
+  belongs_to :genre
+
 end
