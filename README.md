@@ -20,11 +20,9 @@ Things you may want to cover:
 
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
-| nickname                 | string             | null: false, unique: true   |
-| e-mail                   | string             | null: false, unique: true   |
+| nickname                 | string             | null: false, unique: true       |
+| e-mail                   | string             | null: false, unique: true       |
 | encrypted-password       | string             | null: false, max_length: 8      |
-| prefecture_id            | integer            |                                 |
-
 
 ### Association
 - has_many :posts
@@ -36,10 +34,11 @@ Things you may want to cover:
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
 | gender                   | string             | null: false                     |
+| prefecture_id            | integer            |                                 |
 | f_store_one              | string             | null: false                     |
 | f_store_two              | string             |                                 |
 | f_store_three            | string             |                                 |
-| f_genre_id               | integer            | null: false                     |
+| genre_id                 | integer            | null: false                     |
 | f_topping                | string             |                                 |
 | self_introduction        | text               |                                 |
 | user                     | references         | null: false, foreign_key: true  |
