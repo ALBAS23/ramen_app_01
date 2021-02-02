@@ -503,4 +503,115 @@ input[type="file"] {
   height: 100%;
 }
 
+<<<<<<< Updated upstream
 /* ********************** MyProfile *************************** */
+=======
+.profile-list-tag p {
+  font-size: 1.6rem;
+}
+
+.profile-caution {
+  font-size: 1.4rem;
+  background-color: red;
+  margin-left: 20px;
+}
+
+.profile-any {
+  font-size: 1.4rem;
+  background-color: gray;
+  margin-left: 20px;
+}
+
+.profile-list-content {
+  background-color: whitesmoke;
+  width: 62%;
+  height: 100%;
+  padding: 15px 10px;
+}
+
+.profile-list-content p {
+  font-size: 1.6rem;
+}
+
+.introduction {
+  height: 200px;
+}
+
+.introduction p {
+  line-height: 25px;
+}
+
+.profile-btn {
+  position: absolute;
+  top: -18px;
+  right: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  border: none;
+  padding: 15px 30px;
+  background-color: rgba(250, 88, 18, 0.8);
+  border-radius: 10px;
+  cursor: default;
+}
+
+.profile-btn:hover {
+  opacity: 0.7;
+}
+
+.profile-edit-group {
+  width: 100%;
+  padding: 30px 40px 0;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.profile-list-content input[type="text"], .profile-list-content input[type="email"],
+.profile-list-content select, .profile-list-content input[type="password"] {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 1.6rem;
+  margin-left: 0;
+}
+
+.profile-list-content textarea {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  font-size: 1.6rem;
+}
+
+.profile-submit {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.profile-submit input[type="submit"] {
+  padding: 15px 40px;
+  font-size: 1.6rem;
+  border: none;
+  background-color: rgba(250, 88, 18, 0.8);
+  border-radius: 10px;
+  cursor: default;
+  color: #fff;
+}
+
+/* ********************** MyProfile *************************** */
+
+/* ********************** ErrorMessage *************************** */
+
+.alert {
+  margin: 0 auto 30px;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  background-color: #f1c4c438;
+  color: red;
+}
+
+.alert-warning li {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+>>>>>>> Stashed changes
