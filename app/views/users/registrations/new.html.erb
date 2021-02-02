@@ -23,10 +23,6 @@
         <h5>パスワード確認用<span class="caution mandatory">必須</span></h5>
         <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "パスワードをもう一度入力してください" %>
       </div>
-      <div class="form-box">
-        <h5>現住所<span class="caution any">任意</span></h5>
-        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name) %>
-      </div>
       <div class="form-submit">
         <%= f.submit "新規登録" %>
       </div>

@@ -10,7 +10,5 @@ class User < ApplicationRecord
 
   has_many :posts
   has_one :person
-  belongs_to :prefecture
-  belongs_to :genre
 
 end

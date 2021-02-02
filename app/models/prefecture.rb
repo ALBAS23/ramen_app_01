@@ -52,6 +52,5 @@ class Prefecture < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :posts
-  has_many :users
   has_many :person
 end
