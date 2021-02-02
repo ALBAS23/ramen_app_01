@@ -1,6 +1,6 @@
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>ニックネーム<span class="caution profile-caution">必須</span></p>
+    <p>ニックネーム</span></p>
   </div>
   <div class="profile-list-content">
     <p><%= @user.nickname %></p>
@@ -8,7 +8,15 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>性別<span class="caution profile-any">任意</span></p>
+    <p>メールアドレス</p>
+  </div>
+  <div class="profile-list-content">
+    <p><%= @user.email %></p>
+  </div> 
+</div>
+<div class="profile-list">
+  <div class="profile-list-tag">
+    <p>性別</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -18,7 +26,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>現住所<span class="caution profile-any">任意</span></p>
+    <p>現住所</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -28,15 +36,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>メールアドレス<span class="caution profile-caution">必須</span></p>
-  </div>
-  <div class="profile-list-content">
-    <p><%= @user.email %></p>
-  </div> 
-</div>
-<div class="profile-list">
-  <div class="profile-list-tag">
-    <p>お気に入り店舗①<span class="caution profile-caution">必須</span></p>
+    <p>お気に入り店舗①</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -46,7 +46,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>お気に入り店舗②<span class="caution profile-any">任意</span></p>
+    <p>お気に入り店舗②</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -56,7 +56,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>お気に入り店舗③<span class="caution profile-any">任意</span></p>
+    <p>お気に入り店舗③</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -66,7 +66,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>好きなジャンル<span class="caution profile-caution">必須</span></p>
+    <p>好きなジャンル</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -76,7 +76,7 @@
 </div>
 <div class="profile-list">
   <div class="profile-list-tag">
-    <p>好きなトッピング<span class="caution profile-caution">必須</span></p>
+    <p>好きなトッピング</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
@@ -86,7 +86,7 @@
 </div>
 <div class="profile-list introduction">
   <div class="profile-list-tag">
-    <p>自己紹介文（400文字以内）<span class="caution profile-any">任意</span></p>
+    <p>自己紹介文（400文字以内）</p>
   </div>
   <div class="profile-list-content">
     <% unless @person.blank? %>
