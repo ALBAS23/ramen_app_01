@@ -262,6 +262,7 @@ ul, li {
 
 .post-category-value {
   width: 72%;
+  text-align: left;
 }
 
 /* ******post-index****** */
@@ -398,6 +399,7 @@ input[type="file"] {
 
 .l-post-show {
   width: 50%;
+  height: 700px;
 }
 
 .post-show-name {
@@ -416,6 +418,10 @@ input[type="file"] {
 .post-show-items li {
   font-size: 2.6rem;
   padding: 10px; 
+}
+
+.post-show-picture img { 
+  height: 100%;
 }
 
 /* ******user-show******** */
@@ -494,7 +500,7 @@ input[type="file"] {
 }
 
 .post-btn-edit {
-  right:  170px;
+  right:  130px;
 }
 
 

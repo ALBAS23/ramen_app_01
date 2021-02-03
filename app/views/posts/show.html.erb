@@ -17,12 +17,28 @@
           <% else %>
             <div class="post-picture post-show-picture"></div>
           <% end %>
-          <ul class="post-items post-show-items">
-            <li>メニュー：<span><%=@post.menu%></span></li>
-            <li>店名：<span><%=@post.store%><span></li>
-            <li>値段：<span> ¥ <%=@post.price%></span></li>
-            <li>ジャンル：<span><%=@post.genre.name%></span></li>
-          </ul>
+         <ul class="post-items">
+              <li>
+                <p class="post-category">メニュー：</p>
+                <p class="post-category-value"><%=@post.menu%></p>
+              </li>
+              <li>
+                <p class="post-category">店名：
+                <p class="post-category-value"><%=@post.store%></p>
+              </li>
+              <li>
+                <p class="post-category">値段：
+                <p class="post-category-value"> ¥ <%=@post.price%></p>
+              </li>
+              <li>
+                <p class="post-category">ジャンル：
+                <p class="post-category-value"><%=@post.genre.name%></p>
+              </li>
+              <li>
+                <p class="post-category">ひとコト：
+                <p id="word" class="post-category-value"><%=@post.word%></p>
+              </li>
+            </ul>
         </a>
       </div>
     </div>
