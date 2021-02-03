@@ -1,7 +1,9 @@
 <section class="profile-main-group">
   <div class="profile-group">
     <h1>プロフィール情報</h1>
-    <%= link_to '編集', "/person/#{current_user.id}/edit", class: "profile-btn" %>
+    <% if @user.id == current_user.id %>
+      <%= link_to '編集', "/person/#{@user.id}/edit", class: "profile-btn" %>
+    <% end %>
     <div class="profile-lists">
       <%= render 'person/person_profile_lists' %>
     </div>

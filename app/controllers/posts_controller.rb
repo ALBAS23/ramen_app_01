@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
   before_action :move_to_top_pages, except: :top
+  before_action :move_to_root_path_top, only: :top
+  before_action :post_data, only: [:show, :edit, :update, :destroy]
+  before_action :move_to_root_path, only: [:edit, :update, :destroy]
 
   def index
     @posts_created_at = Post.order("created_at DESC")
@@ -24,15 +27,14 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+
   end
 
   def edit 
-    @post = Post.find(params[:id])
+
   end
 
   def update 
-    @post = Post.find(params[:id])
     if @post.update(post_params)
       redirect_to root_path
     else
@@ -41,7 +43,6 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
     if @post.destroy
       redirect_to root_path
     else
@@ -54,6 +55,22 @@ class PostsController < ApplicationController
   def move_to_top_pages
     unless user_signed_in?
       redirect_to top_posts_path 
+    end
+  end
+
+  def move_to_root_path_top
+    if user_signed_in?
+      redirect_to root_path
+    end
+  end
+
+  def post_data
+    @post = Post.find(params[:id])
+  end
+
+  def move_to_root_path
+    unless @post.user.id == current_user.id
+      redirect_to root_path
     end
   end
 

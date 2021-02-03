@@ -3,8 +3,10 @@
 <section class="container post-table">
   <div class="post-show-section post-group">
     <h1><a href="#" style="display: inline-block; color: black;"><%=@post.user.nickname%>さん</a>の投稿</h1>
-    <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
-    <%= link_to '削除', post_path(@post), method: :delete, class: "post-btn" %>
+    <% if @post.user.id == current_user.id %>
+      <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
+      <%= link_to '削除', post_path(@post), method: :delete, class: "post-btn" %>
+    <% end %>
   </div>
 
   <article class="post-show">

@@ -1,6 +1,9 @@
 class PersonController < ApplicationController
+
+  before_action :user_data, only: [:show, :edit]
+  before_action :move_to_root_path, only: :edit
+
   def show
-    @user = User.find(params[:id])
     @person = @user.person
   end
 
@@ -30,6 +33,16 @@ class PersonController < ApplicationController
   end
 
   private
+
+  def user_data
+    @user = User.find(params[:id])
+  end
+
+  def move_to_root_path
+    unless @user.id == current_user.id
+      redirect_to root_path
+    end
+  end
 
   def person_params
     params.require(:person).permit(:gender, :prefecture_id, :f_store_one, :f_store_two, :f_store_three, :genre_id, :f_topping, :self_introduction).merge(user_id: params[:id])
