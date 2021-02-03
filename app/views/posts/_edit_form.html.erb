@@ -1,0 +1,38 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <%= render 'layouts/error_messages', model: form.object %>
+  <div class="form-box">
+    <h5>メニュー<span class="caution mandatory">必須</span></h5>
+    <%= form.text_field :menu %>
+  </div>
+  <div class="form-box">
+    <h5>店舗名<span class="caution mandatory">必須</span></h5>
+    <%= form.text_field :store %>
+  </div>
+  <div class="form-box">
+    <h5>値段<span class="caution mandatory">必須</span><span class="note">注意）半角数字で入力してください</span></h5>
+    <%= form.text_field :price %>
+  </div>
+    <div class="form-box">
+    <h5>ジャンル<span class="caution mandatory">必須</span></h5>
+    <%= form.collection_select(:genre_id, Genre.all, :id, :name, {}) %>
+  </div>
+  <div class="form-box">
+    <h5>ひとコト<span class="caution mandatory">必須</span></h5>
+    <%= form.text_field :word %>
+  </div>
+  <div class="form-box">
+    <h5>都道府県<span class="caution mandatory">必須</span></h5>
+    <%= form.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}) %>
+  </div>
+  <div class="form-box">
+    <h5>店舗場所<span class="caution any">任意</span></h5>
+    <%= form.text_field :place %>
+  </div>
+  <div class="form-box">
+    <h5>画像<span class="caution any">任意</span></h5>
+    <%= form.file_field :image %>
+  </div>
+  <div class="form-submit">
+    <%= form.submit "編集内容の保存" %>
+  </div>
+<% end %>
