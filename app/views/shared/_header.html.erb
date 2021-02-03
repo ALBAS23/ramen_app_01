@@ -6,10 +6,10 @@
     <nav class="session-group">
       <p><%= current_user.nickname %>さん</p>
       <%= link_to destroy_user_session_path, method: :delete do %>
-        <i class="fa fa-sign-out main-icon-size"></i>ログアウト
+        <i class="fas fa-sign-out-alt"></i>ログアウト
       <% end %>
       <%= link_to "/person/#{current_user.id}" do %>
-        <i class="fa fa-child main-icon-size"></i>マイページ
+        <i class="fas fa-male"></i></i>マイページ
       <% end %>
     </nav>
   </div>

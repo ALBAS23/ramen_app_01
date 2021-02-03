@@ -126,7 +126,7 @@ ul, li {
   opacity: 0.4;
 }
 
-.main-icon-size:before {
+.fa-sign-out-alt, .fa-male, .fa-home {
   font-size: 2.3rem;
   margin-right: 10px;
 }
@@ -145,19 +145,30 @@ ul, li {
 
 .post-conditions {
   display: flex;
-  background-color: #fbc8c873;
-  height: 200px;
-  margin: 0 0 50px;
+  /* background-color: #fbc8c873; */
+  height: 110px;
+  margin: 0 0 40px;
 }
 
 .post-condition {
-  width: 20%;
+  width: 110px;
   height: 100%;
-  padding: 20px;
+  padding-top: 25px;
+  margin-right: 20px;
+  text-align: center;
 }
 
-.post-condition .fa-calendar {
-  font-size: 2.0rem;
+.fa-calendar-alt, .fa-yen-sign{
+  font-size: 3.0rem;
+}
+
+.post-condition .f-icon {
+  
+}
+
+.post-condition p {
+  font-size: 1.6rem;
+  margin-top: 15px;
 }
 
 .container-title {
