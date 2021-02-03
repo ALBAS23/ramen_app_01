@@ -139,22 +139,26 @@ ul, li {
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 85px;
+  padding-top: 40px;
   padding-bottom: 25px;
+}
+
+.container-title {
+  position: relative;
 }
 
 .container h1 {
   position: relative;
-  font-size: 4.5rem;
+  font-size: 3.0rem;
   font-weight: bold;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .container h1::before {
   content: "";
   position: absolute;
   right: 0px;
-  bottom: -30px;
+  bottom: -18px;
   left: 0px;
   border-bottom: 3px solid black;
 }
@@ -205,7 +209,7 @@ ul, li {
 .post-name a {
   display: inline-block;
   font-size: 1.8rem;
-}
+}zz
 
 .post-picture {
   height: 250px;
@@ -253,18 +257,18 @@ ul, li {
 }
 
 .form-box {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .form-box h5 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 20px;
 }
 
 .caution {
   margin-left: 10px;
   padding: 0 5px;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 
@@ -302,10 +306,12 @@ input[type="file"] {
   margin-top: 70px;
 }
 
+
+
 .form-submit input[type="submit"] {
-  background-color: rgba(206,206,206, 1.0);
-  padding: 15px 200px;
-  font-size: 2.0rem;
+  background-color: rgba(250, 88, 18, 0.8);
+  padding: 15px 90px;
+  font-size: 1.8rem;
   border: none;
   color: #fff;
   font-weight: 200;
@@ -313,18 +319,21 @@ input[type="file"] {
 }
 
 .form-btn {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  
 }
 
 .form-btn-back {
-  background-color: rgba(185,206,206, 1.0);
-  padding: 20px 215px;
-  font-size: 2.0rem;
-  border: none;
+  position: absolute;
+  top: -10px;
+  right: 15px;
   color: #fff;
-  font-weight: 200;
-  border-radius: 45px;
-  cursor: auto;
+  font-size: 1.8rem;
+  border: none;
+  padding: 15px 30px;
+  background-color: rgba(250, 88, 18, 0.8);
+  border-radius: 10px;
+  cursor: default;
 }
 
 .form-submit input[type="submit"]:hover, .form-btn-back:hover {

@@ -2,7 +2,10 @@
 <%= render 'shared/header_two' %>
 
 <section class="container post-new">
-  <h1>ログインページ</h1>
+  <div class="container-title">
+    <h1>ログインページ</h1>
+    <%= link_to '戻る', top_posts_path, class: "form-btn-back" %>
+  </div>
   <article class="container-form">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
@@ -17,9 +20,6 @@
       </div>
       <div class="form-submit">
         <%= f.submit "ログイン" %>
-      </div>
-      <div class="form-btn">
-        <%=link_to '戻る', top_posts_path, class: "form-btn-back" %>
       </div>
     <% end %>
   </article>
