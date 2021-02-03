@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    attributes:
+      person: 
+        f_store_one: お気に入り店舗①
+        f_topping: 好きなトッピング
+        genre_id : 好きなジャンル
