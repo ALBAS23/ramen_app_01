@@ -171,7 +171,7 @@ ul, li {
 .container article h2 {
   position: relative;
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 50px;
 }
 
@@ -251,7 +251,7 @@ ul, li {
 /* ******post-new******** */
 
 .container-form {
-  padding: 10px 45px 50px;
+  padding: 15px 45px 50px;
   /* background-color: rgba(55, 127, 80, 0.2); */
   border: 1px solid black;
 }
@@ -310,12 +310,12 @@ input[type="file"] {
 
 .form-submit input[type="submit"] {
   background-color: rgba(250, 88, 18, 0.8);
-  padding: 15px 90px;
+  padding: 15px 50px;
   font-size: 1.8rem;
   border: none;
   color: #fff;
   font-weight: 200;
-  border-radius: 45px;
+  border-radius: 15px;
 }
 
 .form-btn {
@@ -460,12 +460,12 @@ input[type="file"] {
 
 .post-btn {
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 15px;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   border: none;
-  padding: 17px 35px;
+  padding: 15px 30px;
   background-color: rgba(250, 88, 18, 0.8);
   border-radius: 10px;
   cursor: default;
@@ -694,7 +694,7 @@ input[type="file"] {
   border: 2px #ff0000cc solid;
 }
 
-.error-container h2 {
+.error-container .error-title {
   padding: 5px 0 10px;
   font-size: 2.0rem;
   color: #fff;
@@ -706,9 +706,13 @@ input[type="file"] {
 }
 
 .error-message {
+  text-align: left;
+  width: 65%;
+  margin: 0 auto;
   padding: 10px 0;
   font-size: 1.6rem;
   font-weight: 600;
   color: red;
+  list-style-type: square;
 }
 
