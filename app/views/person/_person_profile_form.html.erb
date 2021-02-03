@@ -1,4 +1,5 @@
 <%= form_with(model: @person, url: "/person/#{current_user.id}", method: :PATCH,  local: true, class: 'profile-lists') do |form| %>
+  <%= render 'layouts/error_messages', model: form.object %>
   <div class="profile-list">
     <div class="profile-list-tag">
       <p>性別<span class="caution profile-any">任意</span></p>
