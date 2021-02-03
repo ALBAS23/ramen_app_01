@@ -3,16 +3,15 @@
 <section class="picture-section">
   <img src="/images/ラーメン画像２.jpg">
 </section>
-
 <section class="container post-table">
   <div class="post-conditions">
-    <div class="post-condition">
+    <div class="post-condition post-background" id="new-order">
       <div class="f-icon">
         <i class="far fa-calendar-alt"></i>
       </div>
       <p>最新投稿順</p>
     </div>
-    <div class="post-condition">
+    <div class="post-condition" id="price-order">
       <div class="f-icon">
         <i class="fas fa-yen-sign"></i>
       </div>
@@ -23,7 +22,7 @@
     <h1>投稿一覧</h1>
     <%= link_to '新規投稿', new_post_path, class: "post-btn" %>
   </div>
-  <article>
+  <article id="new-order-lists">
     <h2>最新投稿順</h2>
     <div class="table-container">
       <% @posts_created_at.each do |post| %>
@@ -31,7 +30,7 @@
       <% end %>
     </div>
   </article>
-  <article>
+  <article id="price-order-lists">
     <h2>値段順</h2>
     <div class="table-container">
       <% @posts_price.each do |post| %>
