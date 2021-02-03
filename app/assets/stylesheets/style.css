@@ -126,7 +126,7 @@ ul, li {
   opacity: 0.4;
 }
 
-.fa-sign-out-alt, .fa-male, .fa-home {
+.fa-sign-out-alt, .fa-male, .fa-home, .fa-sign-in-alt, .fa-hand-spock {
   font-size: 2.3rem;
   margin-right: 10px;
 }
@@ -148,6 +148,7 @@ ul, li {
   /* background-color: #fbc8c873; */
   height: 110px;
   margin: 0 0 40px;
+  cursor: pointer;
 }
 
 .post-condition {
@@ -156,6 +157,10 @@ ul, li {
   padding-top: 25px;
   margin-right: 20px;
   text-align: center;
+}
+
+.post-background {
+  background-color: #b3e7e891;
 }
 
 .fa-calendar-alt, .fa-yen-sign{
@@ -210,6 +215,10 @@ ul, li {
   bottom: -15px;
   left: 0px;
   border-bottom: 3px solid black;
+}
+
+#price-order-lists {
+  display: none;
 }
 
 .table-container {
