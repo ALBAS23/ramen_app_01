@@ -675,3 +675,31 @@ input[type="file"] {
 }
 
 /* ********************** MyProfile *************************** */
+
+/* ******************** error_messages ********************* */
+
+.error-container {
+  width: 65%;
+  margin: 5px auto 30px;
+  text-align: center;
+  border: 2px #ff0000cc solid;
+}
+
+.error-container h2 {
+  padding: 5px 0 10px;
+  font-size: 2.0rem;
+  color: #fff;
+  background-color: #ff0000cc;
+}
+
+.error-alert {
+  padding: 6px 0;
+}
+
+.error-message {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: red;
+}
+
