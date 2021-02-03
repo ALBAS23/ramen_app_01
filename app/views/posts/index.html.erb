@@ -5,6 +5,15 @@
 </section>
 
 <section class="container post-table">
+  <div class="post-conditions">
+    <div class="post-condition">
+      <%= fa_icon "fa-clock-o" %>
+      <p>最新投稿順</p>
+    </div>
+    <div class="post-condition">
+      <p>値段順</p>
+    </div>
+  </div>
   <div class="post-group">
     <h1>投稿一覧</h1>
     <%= link_to '新規投稿', new_post_path, class: "post-btn" %>

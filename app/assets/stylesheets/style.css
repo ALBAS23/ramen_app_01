@@ -143,6 +143,23 @@ ul, li {
   padding-bottom: 25px;
 }
 
+.post-conditions {
+  display: flex;
+  background-color: #fbc8c873;
+  height: 200px;
+  margin: 0 0 50px;
+}
+
+.post-condition {
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+}
+
+.post-condition .fa-calendar {
+  font-size: 2.0rem;
+}
+
 .container-title {
   position: relative;
 }
