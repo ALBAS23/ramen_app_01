@@ -193,6 +193,9 @@ ul, li {
 .l-post {
   width: 32.3%;
   margin: 0 5px 30px;
+  height: 600px;
+  background-color: #fcdfe05e;
+  border: 1px #f3bfc861 solid;
 }
 
 .l-post a {
@@ -201,15 +204,16 @@ ul, li {
 
 .post-name {
   height: 50px;
-  background-color: rgba(255, 165, 130, 0.8);
   text-align: center;
   padding-top: 17px;
+  background-color: #fbc8c873;
 }
 
 .post-name a {
   display: inline-block;
   font-size: 1.8rem;
-}zz
+  color: black;
+}
 
 .post-picture {
   height: 250px;
@@ -217,7 +221,7 @@ ul, li {
 
 .post-picture img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -231,19 +235,33 @@ ul, li {
 
 .post-items {
   padding-top: 20px;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
 }
 
 .post-items li {
-  padding-bottom: 20px;
-  padding-left: 10px;
+  display: flex;
+  padding: 15px 10px;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  border-bottom: thin black dotted;
+}
+
+.post-items li:last-child {
+  border-bottom: none;
 }
 
 .post-items li #word {
-  line-height: 25px;
+  line-height: 17px;
+}
+
+.post-category {
+  width: 28%;
+  margin-right: 5px;
+}
+
+.post-category-value {
+  width: 72%;
 }
 
 /* ******post-index****** */
