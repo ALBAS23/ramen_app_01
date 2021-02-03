@@ -1,7 +1,17 @@
 ja:
   activerecord:
     attributes:
+      user: 
+        nickname: ニックネーム
+        email: メールアドレス
       person: 
         f_store_one: お気に入り店舗①
         f_topping: 好きなトッピング
         genre_id : 好きなジャンル
+      post: 
+        menu: メニュー
+        store: 店舗
+        price: 値段
+        word: ひとコト
+        genre_id: ジャンル
+        prefecture_id: 都道府県
