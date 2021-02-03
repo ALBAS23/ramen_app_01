@@ -1,0 +1,15 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="form-box">
+    <h5>メールアドレス<span class="caution mandatory">必須</span></h5>
+    <%= f.email_field :email %>
+  </div>
+  <div class="form-box">
+    <h5>パスワード<span class="caution mandatory">必須</h5>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "半角英数字８文字以上で入力してください" %>
+  </div>
+  <div class="form-submit">
+    <%= f.submit "ログイン" %>
+  </div>
+<% end %>
