@@ -1,7 +1,10 @@
 <%= render 'shared/header' %>
 
 <section class="container post-new">
-  <h1>投稿編集ページ</h1>
+  <div class="container-title">
+    <h1>投稿編集ページ</h1>
+    <%=link_to '戻る', "/posts/#{params[:id]}", class: "form-btn-back" %>
+  </div>
   <article class="container-form">
      <%= render 'posts/edit_form'%>
   </article>
