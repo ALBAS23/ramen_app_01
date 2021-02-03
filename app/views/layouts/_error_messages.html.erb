@@ -1,6 +1,6 @@
 <% if model.errors.any? %>
 <div class="error-container">
-  <h2>◯◯件のエラーが発生しています</h2>
+  <h3 class="error-title">◯◯件のエラーが発生しています</h3>
   <div class="error-alert">
   <ul>
     <% model.errors.full_messages.each do |message| %>
