@@ -824,6 +824,7 @@ input[type="file"] {
   .header-wrapper {
     position: relative;
     background-color: #282828;
+    height: 60px
   }
 
   .header-left {
@@ -833,8 +834,8 @@ input[type="file"] {
   .res-header-left {
     width: 75%;
     text-align: left;
-    padding: 36px 0 0 20px;
-    font-size: 1.8rem;
+    padding: 25px 0 0 20px;
+    font-size: 1.4rem;
     color: #fff;
   }
 
@@ -854,16 +855,16 @@ input[type="file"] {
   .fa-align-justify {
     position: absolute;
     right: 10%;
-    top: 37px;
+    top: 23px;
     font-size: 1.8rem;
     color: black;
   }
 
   .modal-wrapper {
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 100%;
-    top: 90px;
+    top: 60px;
     left: 0;
     z-index: 100;
   }
@@ -878,9 +879,94 @@ input[type="file"] {
     margin: 0 5px;
     border-bottom: 1px solid #fff;
     text-align: center;
+    font-size: 1.2rem;
   }
 
-  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ main +++++++++++++++++++++++++++++++ */
+  .picture-section img {
+    height: 200px;
+  }
+
+  .fa-calendar-alt, .fa-yen-sign {
+    font-size: 1.6rem;
+  }
+
+  .post-conditions {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .post-condition p {
+    font-size: 1.4rem;
+  }
+
+  .post-condition {
+    margin: 0 25px;
+  }
+
+  .post-btn { 
+    display: none;
+  }
+
+  .container h1 {
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+  }
+
+  .container h1::before {
+    bottom: -10px;
+    left: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .container article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .container article h2::before {
+    bottom: -10px;
+    left: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .l-post {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-name {
+    height: 30px;
+    padding: 8px 0;
+  }
+
+  .post-name a {
+    font-size: 1.4rem;
+  }
+
+  .post-picture {
+    height: 200px;
+  }
+
+  .post-picture img {
+    height: 100%;
+  }
+
+  .post-items {
+    padding-top: 10px;
+  }
+
+  .post-category {
+    font-size: 1.3rem;
+  }
+
+  .post-category-value {
+    font-size: 1.3rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ main +++++++++++++++++++++++++++++++ */
   
 }
 
