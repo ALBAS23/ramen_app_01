@@ -551,7 +551,6 @@ input[type="file"] {
   border: none;
   padding: 15px 15px;
   background-color: rgba(250, 88, 18, 0.8);
-  border-radius: 10px;
   cursor: default;
 }
 
@@ -817,6 +816,7 @@ input[type="file"] {
 
   .container {
     width: 100%;
+    padding-bottom: 10px;
   }
 
   /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++ */
@@ -861,7 +861,7 @@ input[type="file"] {
   }
 
   .modal-wrapper {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 100%;
     top: 60px;
@@ -884,7 +884,7 @@ input[type="file"] {
 
   /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
 
-  /* +++++++++++++++++++++++++++++ main +++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++ posts#index +++++++++++++++++++++++++++++++ */
   .picture-section img {
     height: 200px;
   }
@@ -966,8 +966,93 @@ input[type="file"] {
     font-size: 1.3rem;
   }
 
-  /* +++++++++++++++++++++++++++++ main +++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++ posts#index +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
+
+  .post-table .post-show h2 {
+    display: none;
+  }
+
+  /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ posts#new +++++++++++++++++++++++++++++++ */
+
+  .container-form {
+    padding: 0 5px 10px;
+    border: none;
+  }
+
+  .form-box {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: none;
+  }
+
+  .form-box h5 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .caution {
+    font-size: 1.2rem;
+  }
+
+  .note { 
+    font-size: 1.0rem;
+    margin-left: 20px;
+  }
+
+  .form-box input[type="text"], .form-box input[type="email"], .form-box input[type="password"], .form-box select {
+    width: 90%;
+    height: 20px;
+    margin-left: 5%;
+    padding: 0 5px;
+    font-size: 1.2rem;
+  }
+
+  input[type="file"] {
+    font-size: 1.0rem;
+  }
+
+  .form-submit {
+    margin-top: 10px;
+  }
+
+  .form-submit input[type="submit"] {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border-radius: 0;
+  }
+
+  /* +++++++++++++++++++++++++++++ posts#new +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ errors-messages +++++++++++++++++++++++++++++++ */
+  .error-container {
+    width: 90%;
+    margin: -10px auto 5px;
+  }
+
+  .error-container .error-title {
+    font-size: 1.2rem;
+    padding: 5px 0 5px;
+  }
+
+  .error-message {
+    width: 80%;
+    font-size: 1.0rem;
+    padding: 3px 0;
+  }
+
+  /* +++++++++++++++++++++++++++++ errors-messages +++++++++++++++++++++++++++++++ */
   
+  /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
+
+  .form-btn-back {
+    display: none;
+  }
+
+  /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
 }
 
 
