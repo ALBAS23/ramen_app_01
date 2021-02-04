@@ -169,15 +169,11 @@ ul, li {
 }
 
 .post-background {
-  background-color: #b3e7e891;
+  background-color: #fcdfe05e;
 }
 
 .fa-calendar-alt, .fa-yen-sign{
   font-size: 3.0rem;
-}
-
-.post-condition .f-icon {
-  
 }
 
 .post-condition p {
@@ -237,9 +233,9 @@ ul, li {
 }
 
 .l-post {
-  width: 32.3%;
+  width: calc((100% - 30px) / 3);
   margin: 0 5px 30px;
-  height: 600px;
+  height: 650px;
   background-color: #fcdfe05e;
   border: 1px #f3bfc861 solid;
 }
@@ -281,7 +277,6 @@ ul, li {
 
 .post-items {
   padding-top: 20px;
-  /* background-color: blanchedalmond; */
 }
 
 .post-items li {
@@ -464,7 +459,7 @@ input[type="file"] {
 
 .l-post-show {
   width: 50%;
-  height: 700px;
+  height: 730px;
 }
 
 .post-show-name {
@@ -565,7 +560,7 @@ input[type="file"] {
 }
 
 .post-btn-edit {
-  right:  130px;
+  right:  80px;
 }
 
 
