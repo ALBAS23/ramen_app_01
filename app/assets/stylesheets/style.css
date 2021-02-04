@@ -555,7 +555,7 @@ input[type="file"] {
   font-size: 1.6rem;
   border: none;
   padding: 15px 15px;
-  background-color: rgba(250, 88, 18, 0.6);
+  background-color: rgba(250, 88, 18, 0.8);
   border-radius: 10px;
   cursor: default;
 }
