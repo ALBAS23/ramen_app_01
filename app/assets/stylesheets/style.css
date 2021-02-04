@@ -90,15 +90,15 @@ ul, li {
 
 .header-wrapper {
   display: flex;
-  height: 100px;
+  height: 90px;
 }
 
 .header-left {
   width: 25%;
   text-align: center;
-  font-size: 2.0rem;
-  padding-top: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1.8rem;
+  padding: 34px 0;
+  background-color: #282828;
 }
 
 .header-right {
@@ -800,3 +800,90 @@ input[type="file"] {
   list-style-type: square;
 }
 
+
+
+
+/* ************************メディアクエリ（スマホ対応）*************************** */
+
+.res {
+  display: none;
+}
+
+@media (max-width: 599px) {
+
+  .res {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++ */
+
+  .header-wrapper {
+    position: relative;
+    background-color: #282828;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .res-header-left {
+    width: 75%;
+    text-align: left;
+    padding: 36px 0 0 20px;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  .res-header-right {
+    width: 25%;
+    background-color: #fff;
+  }
+
+  .fa-home {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .fa-align-justify {
+    position: absolute;
+    right: 10%;
+    top: 37px;
+    font-size: 1.8rem;
+    color: black;
+  }
+
+  .modal-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    z-index: 100;
+  }
+
+  .modal-menus {
+    background-color: #282828;
+  }
+
+  .modal-menu {
+    display: block;
+    padding: 20px 0;
+    margin: 0 5px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+  }
+
+  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++ */
+  
+}
+
+
+
+/* ************************メディアクエリ（スマホ対応）*************************** */
