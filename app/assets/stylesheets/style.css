@@ -40,7 +40,6 @@ ul, li {
   text-align: center;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  text-align: center;
 }
 
 .top-container h1 {
@@ -827,6 +826,12 @@ input[type="file"] {
     height: 60px
   }
 
+  .res-header-wrapper {
+    position: relative;
+    background-color: #282828;
+    height: 60px
+  }
+
   .header-left {
     display: none;
   }
@@ -883,6 +888,42 @@ input[type="file"] {
   }
 
   /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
+
+  /*+++++++++++++++++++++++++++++ posts#top +++++++++++++++++++++++++++++++ */
+  
+  .top-wrapper {
+    width: 100vw;
+  }
+
+  .top-container {
+    padding-top: 80px;
+  }
+
+  .top-container h1{
+    font-size: 2.6rem;
+  }
+
+  .top-container p {
+    font-size: 1.8rem;
+  }
+
+  .login-session {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .login-session .btn {
+    width: 110px;
+    padding: 10px 0;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .fa-sign-in-alt, .fa-hand-spock {
+    font-size: 1.2rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ posts#top +++++++++++++++++++++++++++++++ */
 
   /* +++++++++++++++++++++++++++++ posts#index +++++++++++++++++++++++++++++++ */
   .picture-section img {
