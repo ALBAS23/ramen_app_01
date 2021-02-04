@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   with_options presence: { message: "を必ず入力してください" } do 
     validates :menu
     validates :store
-    validates :price, format: { with: /\A[0-9]+\z/, message: "は半角数字で入力してください" }
+    validates :price, numericality: { message: "は半角数字で入力してください" } 
     validates :word
     validates :user
   end
