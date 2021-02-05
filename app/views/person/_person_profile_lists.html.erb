@@ -6,34 +6,40 @@
     <p><%= @user.nickname %></p>
   </div> 
 </div>
-<div class="profile-list">
-  <div class="profile-list-tag">
-    <p>メールアドレス</p>
+<% if @user.id == current_user.id %>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>メールアドレス</p>
+    </div>
+    <div class="profile-list-content">
+      <p><%= @user.email %></p>
+    </div> 
   </div>
-  <div class="profile-list-content">
-    <p><%= @user.email %></p>
-  </div> 
-</div>
-<div class="profile-list">
-  <div class="profile-list-tag">
-    <p>性別</p>
+<% end %>
+<% if @user.id == current_user.id %>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>性別</p>
+    </div>
+    <div class="profile-list-content">
+      <% unless @person.blank? %>
+        <p><%= @person.gender %></p>
+      <% end %>
+    </div> 
   </div>
-  <div class="profile-list-content">
-    <% unless @person.blank? %>
-      <p><%= @person.gender %></p>
-    <% end %>
-  </div> 
-</div>
-<div class="profile-list">
-  <div class="profile-list-tag">
-    <p>現住所</p>
+<% end %>
+<% if @user.id == current_user.id %>
+  <div class="profile-list">
+    <div class="profile-list-tag">
+      <p>現住所</p>
+    </div>
+    <div class="profile-list-content">
+      <% unless @person.blank? %>
+        <p><%= @person.prefecture.name %></p>
+      <% end %>
+    </div> 
   </div>
-  <div class="profile-list-content">
-    <% unless @person.blank? %>
-      <p><%= @person.prefecture.name %></p>
-    <% end %>
-  </div> 
-</div>
+<% end %>
 <div class="profile-list">
   <div class="profile-list-tag">
     <p>お気に入り店舗①</p>
