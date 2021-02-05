@@ -1,5 +1,4 @@
 <div class="l-post">
-<h3 class="post-name"><a href="#"><%=post.user.nickname%></a></h3>
 <%=link_to "/posts/#{post.id}" do %>
   <% if post.image.attached? %>
     <div class="post-picture"><%= image_tag post.image %></div>
@@ -7,6 +6,10 @@
     <div class="post-picture"></div>
   <% end %>
   <ul class="post-items">
+    <li>
+      <p class="post-category">投稿者：</p>
+      <p class="post-category-value"><%=post.user.nickname%></p>
+    </li>
     <li>
       <p class="post-category">メニュー：</p>
       <p class="post-category-value"><%=post.menu%></p>

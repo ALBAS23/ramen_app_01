@@ -168,7 +168,7 @@ ul, li {
 }
 
 .post-background {
-  background-color: #fcdfe05e;
+  background-color: #f5f2e9;
 }
 
 .fa-calendar-alt, .fa-yen-sign{
@@ -235,8 +235,7 @@ ul, li {
   width: calc((100% - 30px) / 3);
   margin: 0 5px 30px;
   height: 650px;
-  background-color: #fcdfe05e;
-  border: 1px #f3bfc861 solid;
+  background-color: #f5f2e9;
 }
 
 .l-post a {
@@ -667,7 +666,7 @@ input[type="file"] {
 }
 
 .profile-list-tag {
-  background-color: wheat;
+  background-color: #ffeebd;
   padding: 15px 10px;
   width: 38%;
   height: 100%;
