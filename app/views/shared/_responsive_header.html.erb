@@ -1,0 +1,12 @@
+<p class="res res-header-left">ラーメンセレクション</p>
+<div class="res res-header-right">
+  <i class="res fas fa-align-justify"></i>
+</div>
+
+<div class="res modal-wrapper" id="modal-menus-show">
+  <nav class="res modal-menus">
+    <%= link_to 'マイページ', "/person/#{current_user.id}", class: "res modal-menu" %>
+    <%= link_to '新規投稿', new_post_path, class: "res modal-menu" %>
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "res modal-menu" %>
+  </nav>
+</div>

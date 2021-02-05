@@ -2,6 +2,7 @@
   <%= link_to root_path, class: "header-left" do %>
     <i class="fa fa-home main-icon-size"></i>ラーメンセレクション
   <% end %>
+  
   <div class="header-right">
     <nav class="session-group">
       <p><%= current_user.nickname %>さん</p>
@@ -13,4 +14,6 @@
       <% end %>
     </nav>
   </div>
+
+  <%= render 'shared/responsive_header' %>
 </header>
