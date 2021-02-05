@@ -7,5 +7,8 @@
     <div class="profile-lists">
       <%= render 'person/person_profile_lists' %>
     </div>
+    <div class="res res-profile-btns">
+      <%= link_to '編集', "/person/#{@user.id}/edit", class: "res res-profile-btn" %>
+    </div>
   </div>
   </section>

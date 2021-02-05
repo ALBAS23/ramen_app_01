@@ -656,7 +656,7 @@ input[type="file"] {
 
 .profile-list {
   display: flex;
-  height: 60px;
+
   margin: 0 5px;
   border-top: 1px solid black;
 }
@@ -665,11 +665,13 @@ input[type="file"] {
   border-bottom: 1px solid black;
 }
 
+.profile-list-tag, .profile-list-content {
+  padding: 20px 10px 25px;
+}
+
 .profile-list-tag {
   background-color: #ffeebd;
-  padding: 15px 10px;
   width: 38%;
-  height: 100%;
 }
 
 .profile-list-tag p {
@@ -691,8 +693,6 @@ input[type="file"] {
 .profile-list-content {
   background-color: whitesmoke;
   width: 62%;
-  height: 100%;
-  padding: 15px 10px;
 }
 
 .profile-list-content p {
@@ -700,7 +700,7 @@ input[type="file"] {
 }
 
 .introduction {
-  height: 200px;
+
 }
 
 .introduction p {
@@ -832,7 +832,7 @@ input[type="file"] {
   }
 
   .res-header-left {
-    width: 75%;
+    width: 100%;
     text-align: left;
     padding: 25px 0 0 20px;
     font-size: 1.4rem;
@@ -840,7 +840,7 @@ input[type="file"] {
   }
 
   .res-header-right {
-    width: 25%;
+    width: 20%;
     background-color: #fff;
   }
 
@@ -852,9 +852,13 @@ input[type="file"] {
     display: none;
   }
 
-  .fa-align-justify {
+  .fa-times {
+    display: none;
+  }
+
+  .fa-align-justify, .fa-th, .fa-times {
     position: absolute;
-    right: 10%;
+    right: 6.5%;
     top: 23px;
     font-size: 1.8rem;
     color: black;
@@ -881,6 +885,15 @@ input[type="file"] {
     border-bottom: 1px solid #fff;
     text-align: center;
     font-size: 1.2rem;
+  }
+
+  .modal-menu span {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .modal-menus .modal-menu:first-child {
+    border-bottom: none;
   }
 
   /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
@@ -1102,6 +1115,72 @@ input[type="file"] {
   }
 
   /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
+
+  .profile-container {
+    width: 100%;
+  }
+
+  .profile-category-group {
+    display: none;
+  }
+
+  .profile-main-group {
+    width: 100%;
+    border: none;
+    padding: 10px 5px 10px;
+  }
+
+  .profile-btn {
+    display: none;
+  }
+
+  .profile-group h1 {
+    margin: 20px 5px 0;
+    font-size: 1.8rem;
+  }
+
+  .profile-group h1::before {
+    right: 5px;
+    top: 30px;
+    left: 5px;
+    border-bottom: 1px solid black;
+  }
+
+  .profile-lists { 
+    margin: 40px 0 30px;
+  }
+
+  .profile-list { 
+    height: 40px;
+  }
+
+  .introduction {
+    height: auto;
+  }
+
+
+  .profile-list-tag, .profile-list-content {
+    padding: 10px 5px;
+  }
+
+  .profile-list-tag p, .profile-list-content p {
+    font-size: 1.2rem;
+  }
+
+  .res-profile-btns {
+    text-align: center;
+  }
+
+  .res-profile-btn {
+    display: inline-block;
+    background-color: #111111;
+    padding: 15px 30px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ person#show +++++++++++++++++++++++++++++++ */
+
 }
 
 
