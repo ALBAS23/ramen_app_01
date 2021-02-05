@@ -876,6 +876,7 @@ input[type="file"] {
 
   .modal-menus {
     background-color: #282828;
+    height: 100vh;
   }
 
   .modal-menu {
