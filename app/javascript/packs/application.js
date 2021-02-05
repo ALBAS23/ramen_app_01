@@ -10,6 +10,7 @@ require("channels")
 require('jquery')
 require('../header')
 require('../index')
+require('../main')
 
 import '@fortawesome/fontawesome-free/js/all';
 

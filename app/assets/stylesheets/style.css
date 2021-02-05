@@ -678,6 +678,12 @@ input[type="file"] {
   font-size: 1.6rem;
 }
 
+#introduction-counter-alert {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+
 .profile-caution {
   background-color: red;
   margin-left: 20px;
@@ -699,9 +705,6 @@ input[type="file"] {
   font-size: 1.6rem;
 }
 
-.introduction {
-
-}
 
 .introduction p {
   line-height: 25px;
@@ -737,11 +740,12 @@ input[type="file"] {
   padding: 0 10px;
   font-size: 1.6rem;
   margin-left: 0;
+  
 }
 
 .profile-list-content textarea {
   width: 100%;
-  height: 100%;
+  height: 100px;
   padding: 5px 10px;
   font-size: 1.6rem;
 }

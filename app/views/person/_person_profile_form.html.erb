@@ -63,7 +63,8 @@
   </div>
   <div class="profile-list introduction">
     <div class="profile-list-tag">
-      <p>自己紹介文（400文字以内）<span class="caution profile-any">任意</span><br>文字数（400/400文字）</p>
+      <p>自己紹介文（400文字以内）<span class="caution profile-any">任意</span><br>文字数（<span id="introduction-counter"></span>/400文字）</p>
+      <p id="introduction-counter-alert">400文字以下に修正してください</p>
     </div>
     <div class="profile-list-content">
       <%= form.text_area :self_introduction %>
