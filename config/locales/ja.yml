@@ -8,6 +8,7 @@ ja:
         f_store_one: お気に入り店舗①
         f_topping: 好きなトッピング
         genre_id : 好きなジャンル
+        self_introduction: 自己紹介文
       post: 
         menu: メニュー
         store: 店舗
@@ -15,3 +16,4 @@ ja:
         word: ひとコト
         genre_id: ジャンル
         prefecture_id: 都道府県
+        
