@@ -4,7 +4,7 @@ $(function() {
     if ($modal.is(':visible')) {
       $modal.fadeOut();
       $('.container').css('display', 'block');
-      $('.profile-container').css('display', 'block');
+      $('.profile-container').css('display', 'flex');
       $('.fa-th').fadeIn();
       $('.fa-times').fadeOut();
     } else {

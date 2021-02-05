@@ -679,15 +679,15 @@ input[type="file"] {
 }
 
 .profile-caution {
-  font-size: 1.4rem;
   background-color: red;
   margin-left: 20px;
+  font-size: 1.4rem;
 }
 
 .profile-any {
-  font-size: 1.4rem;
   background-color: gray;
   margin-left: 20px;
+  font-size: 1.4rem;
 }
 
 .profile-list-content {
@@ -1181,8 +1181,370 @@ input[type="file"] {
 
   /* +++++++++++++++++++++++++++++ person#show +++++++++++++++++++++++++++++++ */
 
+  /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
+
+  .profile-container {
+    padding-top: 15px;
+  }
+
+  .profile-edit-group {
+    border: none;
+    padding: 10px 20px 0;
+  }
+
+  .profile-list-tag p, .profile-list-content p {
+    font-size: 1.0rem;
+  }
+
+  .caution {
+    font-size: 0.8rem;
+  }
+
+  .profile-caution, .profile-any {
+    margin-left: 3px;
+  }
+
+  .profile-list-content {
+    width: 90%;
+  }
+
+  .profile-list-content input[type="text"], .profile-list-content input[type="email"], .profile-list-content select, .profile-list-content input[type="password"], .profile-list-content input[type="radio"] {
+    height: 20px;
+    font-size: 1.0rem;
+  }
+
+  .profile-list-content label {
+    font-size: 1.0rem;
+  }
+
+  .profile-list-content textarea {
+    font-size: 1.0rem;
+  }
+
+  .profile-submit {
+    margin-top: 20px;
+  }
+
+  .profile-submit input[type="submit"] {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
+
 }
 
 
 
 /* ************************メディアクエリ（スマホ対応）*************************** */
+
+/* ************************メディアクエリ（タブレット対応）*************************** */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+  .res {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+ 
+  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
+  
+  .header-left {
+    font-size: 1.6rem;
+    width: 50%;
+    padding: 38px 0;
+  }
+
+  .fa-home {
+    font-size: 1.6rem;
+  }
+
+  .session-group {
+    width: 100%;
+    margin-right: 3%;
+  }
+
+  .session-group p, .session-group a {
+    font-size: 1.4rem;
+    margin: 0 7px;
+  }
+
+  .session-group .fa-sign-out-alt, .session-group .fa-male {
+    font-size: 1.4rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ posts#top +++++++++++++++++++++++++++++++ */
+
+  .top-container h1 {
+    font-size: 5rem;
+  }
+
+  .login-session {
+    margin-top: 70px;
+  }
+
+  .login-session .btn {
+    width: 150px;
+    padding: 15px 0;
+    margin: 0 20px;
+    font-size: 1.4rem;
+  }
+
+  .fa-sign-in-alt, .fa-hand-spock {
+    font-size: 1.4rem;
+  }
+
+
+
+  /* +++++++++++++++++++++++++++++ posts#top +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ posts#index +++++++++++++++++++++++++++++++ */
+
+  .fa-calendar-alt, .fa-yen-sign {
+    font-size: 2.4rem;
+  }
+
+  .post-condition p {
+    font-size: 1.4rem;
+  }
+
+  .container h1 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+
+  .container h1::before {
+    bottom: -12px;
+    border-bottom: 2px solid black;
+  }
+
+  .post-btn {
+    top: -15px;
+    right: 10px;
+    font-size: 1.3rem;
+  }
+
+  .container article h2 {
+    font-size: 2.0rem;
+    margin-bottom: 30px;
+  }
+
+  .container article h2::before {
+    bottom: -10px;
+    border-bottom: 2px solid black;
+  }
+
+  .l-post {
+    width: calc((100% - 20px) / 2);
+    height: 620px;
+  }
+
+  .post-items li {
+    font-size: 1.2rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ posts#index +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ posts#new +++++++++++++++++++++++++++++++ */
+
+  .form-box h5 {
+    font-size: 1.8rem;
+  }
+
+  .caution {
+    font-size: 1.4rem;
+  }
+
+  .form-box input[type="text"], .form-box input[type="email"], .form-box input[type="password"], .form-box select {
+    height: 30px;
+  }
+
+  
+ .form-submit input[type="submit"] {
+    padding: 10px 40px;
+    font-size: 1.4rem;
+ }
+
+ /* +++++++++++++++++++++++++++++ posts#new +++++++++++++++++++++++++++++++ */
+
+ /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
+
+ .l-post-show {
+   width: 80%;
+   height: 730px;
+ }
+
+ .post-btn-edit {
+   right: 80px;
+ }
+
+ /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
+
+ /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
+
+  .form-btn-back {
+  font-size: 1.3rem;
+  padding: 13px 20px;
+}
+
+ /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
+
+ /* +++++++++++++++++++++++++++++ error_message +++++++++++++++++++++++++++++++ */
+
+  .error-container {
+    width: 100%;
+  }
+
+  .error-container .error-title {
+    font-size: 1.4rem;
+  }
+
+  .error-container ul {
+    margin: 5px 0;
+  }
+
+  .error-message {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
+
+ /* +++++++++++++++++++++++++++++ error_message +++++++++++++++++++++++++++++++ */
+
+ /* +++++++++++++++++++++++++++++ person#show +++++++++++++++++++++++++++++++ */
+
+ .header-wrapper {
+  position: relative;
+  background-color: #282828;
+  height: 60px
+}
+
+.res-header-wrapper {
+  position: relative;
+  background-color: #282828;
+  height: 60px
+}
+
+.header-left {
+  display: none;
+}
+
+.res-header-left {
+  width: 100%;
+  text-align: left;
+  padding: 25px 0 0 20px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.res-header-right {
+  width: 20%;
+  background-color: #fff;
+}
+
+.fa-home {
+  display: none;
+}
+
+.header-right {
+  display: none;
+}
+
+.fa-times {
+  display: none;
+}
+
+.fa-align-justify, .fa-th, .fa-times {
+  position: absolute;
+  right: 6.5%;
+  top: 23px;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.modal-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 100;
+}
+
+.modal-menus {
+  background-color: #282828;
+  height: 100vh;
+}
+
+.modal-menu {
+  display: block;
+  padding: 20px 0;
+  margin: 0 5px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.modal-menu span {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.modal-menus .modal-menu:first-child {
+  border-bottom: none;
+}
+
+.profile-container {
+  width: 100%;
+}
+
+.profile-category-group {
+  display: none;
+}
+
+.profile-main-group {
+  width: 100%;
+  border: none;
+  padding: 10px 5px 10px;
+}
+
+.profile-btn {
+  font-size: 1.3rem;
+  top: -5px;
+  padding: 10px 20px;
+}
+
+.profile-list-tag p, .profile-list-content p {
+  font-size: 1.4rem;
+}
+
+ /* +++++++++++++++++++++++++++++ person#show +++++++++++++++++++++++++++++++ */
+
+ /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
+
+ .caution {
+   font-size: 1.2rem;
+ }
+
+ .profile-caution, .profile-any {
+   margin-left: 10px;
+ }
+
+ .profile-list-content input[type="text"], .profile-list-content input[type="email"], .profile-list-content select, .profile-list-content input[type="password"] {
+   font-size: 1.4rem;
+ }
+
+ .profile-submit input[type="submit"] {
+   font-size: 1.3rem;
+   padding: 10px 25px;
+ }
+
+ /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
+}
+
+/* ************************メディアクエリ（タブレット対応）*************************** */
