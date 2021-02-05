@@ -1,4 +1,4 @@
-function charCounter() {
+const charCounter = () => {
   const input = document.getElementById("person_self_introduction");
   const count = document.getElementById("introduction-counter");
   const alert = document.getElementById("introduction-counter-alert")
@@ -10,10 +10,7 @@ function charCounter() {
     color: 'black',
     fontWeight: 'normal'
   }
-  count.innerHTML = input.value.length
-  
-  input.addEventListener("input", () => {
-    let num = input.value.length;
+  const strJudge = (num) => {
     if (num > 400) {
       for(let prop in erStyleIn) {
         count.style[prop] = erStyleIn[prop];
@@ -27,6 +24,13 @@ function charCounter() {
       count.innerHTML = num;
       alert.style.display = 'none';
     }
+  };
+  const firstCount = input.value.length
+  strJudge(firstCount);
+  
+  input.addEventListener("input", () => {
+    let strCount = input.value.length;
+    strJudge(strCount);
   });
 };
 
