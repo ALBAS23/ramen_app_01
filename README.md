@@ -60,6 +60,14 @@ Things you may want to cover:
 | place                    | string             |                                 |
 | user                     | references         | null: false, foreign_key: true  |
 
+## sns credentials table
+| Column                   | Type               | Options                         |
+|:-------------------------|-------------------:|:-------------------------------:|
+| provider                 | string             |                                 |
+| uid                      | string             |                                 |
+| user                     | references         | foreign_key: true               |
+
+
 
 ### Association
 - belongs_to :user
