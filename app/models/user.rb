@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable
+         :recoverable, :rememberable, :omniauthable, omniauth_providers: [:google_oauth2]
 
   with_options presence: { message: "を必ず入力してください" } do
     validates :nickname, :email, :password, :password_confirmation
@@ -15,5 +15,19 @@ class User < ApplicationRecord
 
   has_many :posts
   has_one :person
+  has_many :sns_credentials
+
+  def self.from_omniauth(auth)
+    sns = SnsCredential.where(provider: auth.provider, uid: auth.uid).first_or_create
+    user = User.where(email: auth.info.email).first_or_initialize( 
+      email: auth.info.email
+    )
+
+    if user.persisted?
+      sns.user = user
+      sns.save
+    end
+    { user: user, sns: sns }
+  end
 
 end
