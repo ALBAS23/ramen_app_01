@@ -361,18 +361,6 @@ ul, li {
   background-color: rgb(247,247,247);
 }
 
-/* .form-box input:required {
-  background: #ffb3b3
-}
-
-.form-box input[type="password"]:invalid {
-  background-color: #ffb3b3;
-}
-
-.form-box input:valid {
-  background: transparent;
-} */
-
 input[type="file"] {
   margin-left: 4%;
   font-size: 1.6rem;
@@ -383,8 +371,6 @@ input[type="file"] {
   margin-top: 70px;
 }
 
-
-
 .form-submit input[type="submit"] {
   background-color: #111111;
   padding: 15px 50px;
@@ -392,11 +378,6 @@ input[type="file"] {
   border: none;
   color: #fff;
   font-weight: 200;
-}
-
-.form-btn {
-  /* margin-top: 30px; */
-  
 }
 
 .form-btn-back {
@@ -409,6 +390,22 @@ input[type="file"] {
   padding: 15px 30px;
   background-color: #111111;
   cursor: default;
+}
+
+.form-btn-google {
+  position: absolute;
+  top: -10px;
+  right: 130px;
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+  padding: 15px 30px;
+  background-color: #983234;
+  cursor: default;
+}
+
+.fa-gofore {
+  margin-right: 10px;
 }
 
 .form-submit input[type="submit"]:hover, .form-btn-back:hover {

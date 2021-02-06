@@ -4,7 +4,10 @@
 <section class="container post-new">
   <div class="container-title">
     <h1>新規登録ページ</h1>
-    <%=link_to '戻る', top_posts_path, class: "form-btn-back" %>
+    <%= link_to user_google_oauth2_omniauth_authorize_path, method: :post, class: "form-btn-google" do %>
+      <i class="fab fa-gofore"></i>Googleアカウントで登録する
+    <% end %>
+    <%= link_to '戻る', top_posts_path, class: "form-btn-back" %>
   </div>
   <article class="container-form">
     <%= render 'users/registrations/new_form'%>
