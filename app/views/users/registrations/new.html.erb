@@ -11,6 +11,11 @@
   </div>
   <article class="container-form">
     <%= render 'users/registrations/new_form'%>
+    <div class="res google-form">
+      <%= link_to user_google_oauth2_omniauth_authorize_path, method: :post, class: "res res-form-btn-google" do %>
+        <i class="res fab fa-gofore"></i>Googleアカウントで登録する
+      <% end %>
+    </div>
   </article>
 </section>
 

@@ -10,6 +10,11 @@
   </div>
   <article class="container-form">
     <%= render 'users/sessions/new_form' %>
+    <div class="res google-form">
+      <%= link_to user_google_oauth2_omniauth_authorize_path, method: :post, class: "res res-form-btn-google" do %>
+        <i class="res fab fa-gofore"></i>Googleアカウントでログインする
+      <% end %>
+    </div>
   </article>
 </section>
 

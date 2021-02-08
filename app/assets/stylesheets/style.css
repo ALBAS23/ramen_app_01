@@ -1097,10 +1097,33 @@ input[type="file"] {
 
   /* +++++++++++++++++++++++++++++ errors-messages +++++++++++++++++++++++++++++++ */
   
-  /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++ posts#edit, users#registrations +++++++++++++++++++++++++++++++ */
 
   .form-btn-back {
     display: none;
+  }
+
+  .form-btn-google { 
+    display: none;
+  }
+
+  .google-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .res-form-btn-google {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px 5px;
+    background-color: #983234;
+  }
+
+  .fa-gofore {
+    display: inline;
+    margin-right: 3px;
+    font-size: 1.0rem;
   }
 
   /* +++++++++++++++++++++++++++++ posts#edit +++++++++++++++++++++++++++++++ */
@@ -1546,6 +1569,16 @@ input[type="file"] {
  }
 
  /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ user#registrations +++++++++++++++++++++++++++++++ */
+
+ .form-btn-google { 
+  font-size: 1.3rem;
+  padding: 13px 20px;
+  right: 100px;
+ }
+
+  /* +++++++++++++++++++++++++++++ user#registrations +++++++++++++++++++++++++++++++ */
 }
 
 /* ************************メディアクエリ（タブレット対応）*************************** */

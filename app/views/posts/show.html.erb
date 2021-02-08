@@ -10,7 +10,7 @@
   </div>
 
   <article class="post-show">
-    <h2><%=@post.word%></h2>
+    <h2>店舗名：<%= @post.store %></h2>
     <div class="table-container table-show-container">
       <div class="l-post l-post-show">
         <%= render partial: 'posts/show_post', locals: { post: @post } %>
