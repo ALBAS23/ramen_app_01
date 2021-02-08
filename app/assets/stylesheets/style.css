@@ -191,6 +191,11 @@ ul, li {
   margin-bottom: 65px;
 }
 
+.container h1 span {
+  font-size: 1.4rem;
+  margin-left: 15px;
+}
+
 .container h1::before {
   content: "";
   position: absolute;
@@ -553,6 +558,10 @@ input[type="file"] {
 
 .post-btn-edit {
   right:  80px;
+}
+
+.post-btn-favorite {
+  background-color: #FD7373;
 }
 
 

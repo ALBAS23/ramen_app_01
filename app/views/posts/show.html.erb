@@ -2,11 +2,13 @@
 
 <section class="container post-table">
   <div class="post-show-section post-group">
-    <h1><a href="#" style="display: inline-block; color: black;"><%=@post.user.nickname%>さん</a>の投稿</h1>
+    <h1><a href="#" style="display: inline-block; color: black;"><%=@post.user.nickname%>さん</a>の投稿<span>お気に入り数：０</span></h1>
     <% if @post.user.id == current_user.id %>
       <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
       <%= link_to '削除', post_path(@post), method: :delete, class: "post-btn" %>
     <% end %>
+      <%= link_to 'お気に入りに登録する', root_path, class: "post-btn post-btn-favorite" %>
+      <%= link_to 'お気に入りを解除する', root_path, class: "post-btn post-btn-favorite" %>
   </div>
 
   <article class="post-show">
