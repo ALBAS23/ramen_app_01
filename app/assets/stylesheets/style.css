@@ -562,6 +562,7 @@ input[type="file"] {
 
 .post-btn-favorite {
   background-color: #FD7373;
+  cursor: grab;
 }
 
 
