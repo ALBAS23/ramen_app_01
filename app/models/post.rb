@@ -3,6 +3,8 @@ class Post < ApplicationRecord
   belongs_to :genre
   belongs_to :prefecture
   belongs_to :user
+  has_many :favorites
+  has_many :users, through: :favorites
   has_one_attached  :image
 
   with_options presence: { message: "を必ず入力してください" } do 
