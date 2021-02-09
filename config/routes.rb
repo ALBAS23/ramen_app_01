@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       get 'top'
     end
     resources :users do
-      resources :favorite, only: [:create, :destroy]
+      resources :favorites, only: [:create, :destroy]
     end
   end 
   resources :person, only: [:show, :edit, :create, :update]
