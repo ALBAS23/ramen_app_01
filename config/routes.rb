@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     collection do
       get 'top'
     end
+    resources :users do
+      resources :favorite, only: [:create, :destroy]
+    end
   end 
   resources :person, only: [:show, :edit, :create, :update]
 end
