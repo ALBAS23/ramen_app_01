@@ -2,17 +2,29 @@
 
 <section class="container post-table">
   <div class="post-show-section post-group">
-    <h1><a href="#" style="display: inline-block; color: black;"><%= @post.user.nickname %>さん</a>の投稿<span>お気に入り数：<span id="favorite-count"><%= @posts.count %></span></span></h1>
+    <h1>
+      <a href="#" style="display: inline-block; color: black;"><%= @post.user.nickname %>さん</a>の投稿
+      <span>お気に入り数：
+      <% if @post_favorite.blank? %>
+        <span id="fa-heart-before"><i class="far fa-heart"></i></span>
+        <span id="fa-heart-after" style="display: none;"><i class="fas fa-heart"></i></span>
+      <% else %>
+        <span id="fa-heart-before" style="display: none;"><i class="far fa-heart"></i></span>
+        <span id="fa-heart-after"><i class="fas fa-heart"></i></span>
+      <% end %>
+        <span id="favorite-count"><%= @posts.count %></span>
+      </span>
+    </h1>
     <% if @post.user.id == current_user.id %>
       <%= link_to '編集', edit_post_path(@post), class: "post-btn post-btn-edit" %>
       <%= link_to '削除', post_path(@post), method: :delete, class: "post-btn" %>
     <% else %>
       <% if @post_favorite.blank? %>
-        <p class="post-btn post-btn-favorite-before" id="favorite-btn-register" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %>>お気に入りに登録する</p>
-        <p class="post-btn post-btn-favorite-after favorite-judge" id="favorite-btn-release" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %> >お気に入りを解除する</p>
+        <p class="post-btn post-btn-favorite-before" id="favorite-btn-register" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %>><i class="far fa-heart"></i>お気に入りに登録する</p>
+        <p class="post-btn post-btn-favorite-after favorite-judge" id="favorite-btn-release" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %>><i class="far fa-heart"></i>お気に入りを解除する</p>
       <% else %>
-        <p class="post-btn post-btn-favorite-before favorite-judge" id="favorite-btn-register" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %>>お気に入りに登録する</p>
-        <p class="post-btn post-btn-favorite-after" id="favorite-btn-release" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %> data-id=<%= @post_favorite.id %>>お気に入りを解除する</p>
+        <p class="post-btn post-btn-favorite-before favorite-judge" id="favorite-btn-register" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %>><i class="far fa-heart"></i>お気に入りに登録する</p>
+        <p class="post-btn post-btn-favorite-after" id="favorite-btn-release" data-user-id=<%= current_user.id %> data-post-id=<%= @post.id %> data-id=<%= @post_favorite.id %>><i class="far fa-heart"></i>お気に入りを解除する</p>
       <% end %>
     <% end %>
   </div>

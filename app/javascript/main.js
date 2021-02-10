@@ -63,6 +63,8 @@ const favorite = () => {
         favoriteBtnAfter.classList.remove("favorite-judge");
         favoriteBtnAfter.setAttribute("data-id", judge[0].id);
         document.getElementById("favorite-count").innerText = count;
+        document.getElementById("fa-heart-before").setAttribute("style", "display: none");
+        document.getElementById("fa-heart-after").removeAttribute("style");
       }
     }
   })
@@ -87,6 +89,8 @@ const favorite = () => {
       favoriteBtnAfter.classList.add("favorite-judge");
       favoriteBtnAfter.removeAttribute("data-id");
       document.getElementById("favorite-count").innerText = count;
+      document.getElementById("fa-heart-after").setAttribute("style", "display: none");
+      document.getElementById("fa-heart-before").removeAttribute("style");
     }
   })
 };
