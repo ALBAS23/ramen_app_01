@@ -560,11 +560,18 @@ input[type="file"] {
   right:  80px;
 }
 
-.post-btn-favorite {
+.post-btn-favorite-before {
   background-color: #FD7373;
   cursor: grab;
 }
 
+.post-btn-favorite-after {
+  background-color: #989696;
+}
+
+.favorite-judge {
+  display: none;
+}
 
 /* ******* post-new ******* */
 
