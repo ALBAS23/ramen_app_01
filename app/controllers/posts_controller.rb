@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @posts = Favorite.where(post_id: params[:id])
     @post_favorite = @post.favorites.where(user_id: current_user.id)
     @post_favorite = @post_favorite[0]
   end

@@ -57,10 +57,12 @@ const favorite = () => {
 
     XHR.onload = () => {
       const judge = XHR.response.favorite;
+      const count = XHR.response.favorite_count.length;
       if (Object.keys(judge).length !== 0) {
         favoriteBtnBefore.classList.add("favorite-judge");
         favoriteBtnAfter.classList.remove("favorite-judge");
         favoriteBtnAfter.setAttribute("data-id", judge[0].id);
+        document.getElementById("favorite-count").innerText = count;
       }
     }
   })
@@ -80,9 +82,11 @@ const favorite = () => {
     XHR.send(formData);
 
     XHR.onload = () => {
+      const count = XHR.response.favorite_count.length;
       favoriteBtnBefore.classList.remove("favorite-judge");
       favoriteBtnAfter.classList.add("favorite-judge");
       favoriteBtnAfter.removeAttribute("data-id");
+      document.getElementById("favorite-count").innerText = count;
     }
   })
 };

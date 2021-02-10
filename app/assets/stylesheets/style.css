@@ -573,6 +573,10 @@ input[type="file"] {
   display: none;
 }
 
+#favorite-count {
+  margin-left: 5px;
+}
+
 /* ******* post-new ******* */
 
 /* ******* top-image ******* */
