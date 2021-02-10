@@ -27,6 +27,9 @@ Things you may want to cover:
 ### Association
 - has_many :posts
 - has_one :personal
+- has_many :sns_credentials
+- has_many :favorites
+- has_many :favorite_posts, through: favorites, source: post
 
 
 ## people table
@@ -60,6 +63,13 @@ Things you may want to cover:
 | place                    | string             |                                 |
 | user                     | references         | null: false, foreign_key: true  |
 
+### Association
+- belongs_to :user
+- has_many :posts
+- has_many :users, through: favorites
+- has_many :favorites
+
+
 ## sns credentials table
 | Column                   | Type               | Options                         |
 |:-------------------------|-------------------:|:-------------------------------:|
@@ -67,10 +77,20 @@ Things you may want to cover:
 | uid                      | string             |                                 |
 | user                     | references         | foreign_key: true               |
 
+### Association
+- belongs_to :user
 
+
+## favorites
+| Column                   | Type               | Options                         |
+|:-------------------------|-------------------:|:-------------------------------:|
+| user                     | references         | null: false, foreign_key: true  |
+| post                     | references         | null: false, foreign_key: true  |
 
 ### Association
 - belongs_to :user
+- belongs_to :post
+
 
 * Database initialization
 

@@ -191,6 +191,11 @@ ul, li {
   margin-bottom: 65px;
 }
 
+.container h1 span {
+  font-size: 1.8rem;
+  margin-left: 30px;
+}
+
 .container h1::before {
   content: "";
   position: absolute;
@@ -555,6 +560,42 @@ input[type="file"] {
   right:  80px;
 }
 
+.post-btn-favorite-before {
+  background-color: #FD7373;
+  cursor: grab;
+}
+
+.post-btn-favorite-after {
+  background-color: #989696;
+}
+
+.favorite-judge {
+  display: none;
+}
+
+#favorite-count {
+  margin-left: -8px;
+}
+
+#fa-heart-before {
+  margin-left: 0px;
+}
+
+#fa-heart-before .fa-heart{
+  color: #282828;
+}
+
+#fa-heart-after {
+  margin-left: 0px;
+}
+
+#fa-heart-after .fa-heart {
+  color:#FD7373;
+}
+
+.fa-heart {
+  margin-right: 5px;
+}
 
 /* ******* post-new ******* */
 
