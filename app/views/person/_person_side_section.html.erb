@@ -8,7 +8,7 @@
     <ul class="category-menus">
       <li>プロフィール情報</li>
       <% if @user.id == current_user.id %>
-        <li>お気に入り</li>
+        <li><%= link_to 'お気に入り', "/person/#{params[:id]}/favorites", class: "category-menu" %></li>
       <% end %>
       <li>投稿履歴</li>
     </ul>

@@ -315,7 +315,6 @@ ul, li {
 
 .container-form {
   padding: 15px 45px 50px;
-  /* background-color: rgba(55, 127, 80, 0.2); */
   border: 1px solid black;
 }
 
@@ -610,7 +609,7 @@ input[type="file"] {
 
 /* ******* top-image ******* */
 
-/* ********************** MyProfile *************************** */
+/* ********************** person#show *************************** */
 
 .profile-container {
   width: 1160px;
@@ -661,6 +660,10 @@ input[type="file"] {
   font-size: 1.6rem;
   list-style-type: square;
   list-style-position: inside;
+}
+
+.category-menu {
+  color: black;
 }
 
 .profile-main-group {
@@ -802,7 +805,7 @@ input[type="file"] {
   color: #fff;
 }
 
-/* ********************** MyProfile *************************** */
+/* ********************** person#show *************************** */
 
 /* ******************** error_messages ********************* */
 
@@ -835,10 +838,35 @@ input[type="file"] {
   list-style-type: square;
 }
 
+/* *************************** favorites#index *************************** */
 
+  .profile-favorite-container {
+    width: 100%;
+    padding: 30px 40px 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
 
+  .profile-favorite-group {
+    margin-top: 60px;
+  }
 
-/* ************************メディアクエリ（スマホ対応）*************************** */
+  .favorite-table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+  }
+
+  .f-post {
+    width: calc((100% - 30px) / 3);
+    height: 650px;
+    margin: 0 5px 10px;
+    background-color:#f5f2e9;
+  }
+
+/* ************************* favorites#index **************************** */
 
 .res {
   display: none;
