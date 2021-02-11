@@ -663,8 +663,32 @@ input[type="file"] {
 }
 
 .category-menu {
+  position: relative;
   color: black;
 }
+
+.category-menu::before,
+.category-menu::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s;
+}
+.category-menu::before {
+  right: 50%;
+}
+.category-menu::after {
+  left: 50%;
+}
+.category-menu:hover::before,
+.category-menu:hover::after {
+  width: 50%;
+}
+
 
 .profile-main-group {
   width: 80%;
