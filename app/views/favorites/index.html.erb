@@ -1,0 +1,17 @@
+<%= render 'shared/header_three'%>
+
+<section class="profile-container">
+  <section class="profile-favorite-container">
+    <div class="profile-group">
+      <h1>お気に入り投稿一覧</h1>
+      <%= link_to '戻る', "/person/#{params[:person_id]}", class: "profile-btn" %>
+    </div>
+    <div class="profile-favorite-group">
+      <div class="favorite-table">
+        <% @posts_created_at.each do |post| %>
+          <%= render partial: 'favorites/index_main', locals: { favorite: post } %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</section>

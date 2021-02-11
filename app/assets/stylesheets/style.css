@@ -315,7 +315,6 @@ ul, li {
 
 .container-form {
   padding: 15px 45px 50px;
-  /* background-color: rgba(55, 127, 80, 0.2); */
   border: 1px solid black;
 }
 
@@ -610,11 +609,11 @@ input[type="file"] {
 
 /* ******* top-image ******* */
 
-/* ********************** MyProfile *************************** */
+/* ********************** person#show *************************** */
 
 .profile-container {
   width: 1160px;
-  padding-top: 40px;
+  padding: 40px 0 20px;
   margin: 0 auto;
   display: flex;
 }
@@ -640,7 +639,7 @@ input[type="file"] {
 
 .profile-category-lists {
   background-color: #fff;
-  height: 600px;
+  height: calc(100% - 210px);
   padding: 14px;
   margin: 10px;
   border: 1px solid black;
@@ -657,11 +656,39 @@ input[type="file"] {
 }
 
 .category-menus li {
-  margin-top: 20px;
+  margin: 20px 0 10px;
   font-size: 1.6rem;
   list-style-type: square;
   list-style-position: inside;
 }
+
+.category-menu {
+  position: relative;
+  color: black;
+}
+
+.category-menu::before,
+.category-menu::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s;
+}
+.category-menu::before {
+  right: 50%;
+}
+.category-menu::after {
+  left: 50%;
+}
+.category-menu:hover::before,
+.category-menu:hover::after {
+  width: 50%;
+}
+
 
 .profile-main-group {
   width: 80%;
@@ -802,7 +829,7 @@ input[type="file"] {
   color: #fff;
 }
 
-/* ********************** MyProfile *************************** */
+/* ********************** person#show *************************** */
 
 /* ******************** error_messages ********************* */
 
@@ -835,10 +862,35 @@ input[type="file"] {
   list-style-type: square;
 }
 
+/* *************************** favorites#index *************************** */
 
+  .profile-favorite-container {
+    width: 100%;
+    padding: 30px 40px 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
 
+  .profile-favorite-group {
+    margin-top: 60px;
+  }
 
-/* ************************メディアクエリ（スマホ対応）*************************** */
+  .favorite-table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+  }
+
+  .f-post {
+    width: calc((100% - 30px) / 3);
+    height: 650px;
+    margin: 0 5px 10px;
+    background-color:#f5f2e9;
+  }
+
+/* ************************* favorites#index **************************** */
 
 .res {
   display: none;

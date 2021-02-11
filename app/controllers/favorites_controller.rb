@@ -1,4 +1,9 @@
 class FavoritesController < ApplicationController
+  
+  def index
+    @posts_created_at = Favorite.where(user_id: params[:person_id]).order("created_at DESC")
+  end
+  
   def create
     favorite = Favorite.new(user_id: params[:user_id], post_id: params[:post_id])
     favorite.save
