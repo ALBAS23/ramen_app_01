@@ -6,7 +6,7 @@
   <div class="profile-category-lists">
     <h2>メニュー</h2>
     <ul class="category-menus">
-      <li>プロフィール情報</li>
+      <li><%= link_to 'プロフィール情報', "/person/#{params[:id]}", class: "category-menu" %></li>
       <% if @user.id == current_user.id %>
         <li><%= link_to 'お気に入り', "/person/#{params[:id]}/favorites", class: "category-menu" %></li>
       <% end %>
