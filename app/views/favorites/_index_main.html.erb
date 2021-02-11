@@ -1,4 +1,5 @@
 <div class="f-post">
+<%=link_to "/posts/#{favorite.post.id}" do %>
   <% if favorite.post.image.attached? %>
     <div class="post-picture"><%= image_tag favorite.post.image %></div>
   <% else %>
@@ -34,4 +35,5 @@
       <p id="word" class="post-category-value"><%=favorite.post.word%></p>
     </li>
   </ul>
+<% end %>
 </div>
