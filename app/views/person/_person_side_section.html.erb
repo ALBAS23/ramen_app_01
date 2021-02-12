@@ -9,8 +9,8 @@
       <li><%= link_to 'プロフィール情報', "/person/#{params[:id]}", class: "category-menu" %></li>
       <% if @user.id == current_user.id %>
         <li><%= link_to 'お気に入り', "/person/#{params[:id]}/favorites", class: "category-menu" %></li>
+        <li><%= link_to '投稿履歴', "/person/#{params[:id]}/mypost", class: "category-menu" %></li>
       <% end %>
-      <li>投稿履歴</li>
     </ul>
   </div>
 </nav>
