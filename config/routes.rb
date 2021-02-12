@@ -14,5 +14,8 @@ Rails.application.routes.draw do
   end 
   resources :person, only: [:show, :edit, :create, :update] do
     resources  :favorites, only: :index
+    member do
+      get 'mypost'
+    end
   end
 end
