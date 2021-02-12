@@ -1,0 +1,39 @@
+<div class="f-post">
+<%=link_to "/posts/#{person.id}" do %>
+  <% if person.image.attached? %>
+    <div class="post-picture"><%= image_tag person.image %></div>
+  <% else %>
+    <div class="post-picture"></div>
+  <% end %>
+  <ul class="post-items">
+    <li>
+      <p class="post-category">投稿者：</p>
+      <p class="post-category-value"><%=person.user.nickname%></p>
+    </li>
+    <li>
+      <p class="post-category">メニュー：</p>
+      <p class="post-category-value"><%=person.menu%></p>
+    </li>
+    <li>
+      <p class="post-category">店名：
+      <p class="post-category-value"><%=person.store%></p>
+    </li>
+    <li>
+      <p class="post-category">値段：
+      <p class="post-category-value"> ¥ <%=person.price%></p>
+    </li>
+    <li>
+      <p class="post-category">ジャンル：
+      <p class="post-category-value"><%=person.genre.name%></p>
+    </li>
+    <li>
+      <p class="post-category">都道府県：
+      <p class="post-category-value"><%=person.prefecture.name%></p>
+    </li>
+    <li>
+      <p class="post-category">ひとコト：
+      <p id="word" class="post-category-value"><%=person.word%></p>
+    </li>
+  </ul>
+<% end %>
+</div>
