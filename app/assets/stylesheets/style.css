@@ -481,7 +481,7 @@ input[type="file"] {
   height: 100%;
 }
 
-.post-show-section a {
+.post-show-section .post-person-name {
   display: inline-block;
   color: black;
 }

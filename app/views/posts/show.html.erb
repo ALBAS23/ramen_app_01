@@ -3,7 +3,7 @@
 <section class="container post-table">
   <div class="post-show-section post-group">
     <h1>
-      <%= link_to "/person/#{@post.user.id}" do %>
+      <%= link_to "/person/#{@post.user.id}", class: "post-person-name" do %>
         <%= @post.user.nickname %>さん
       <% end %>
       の投稿
