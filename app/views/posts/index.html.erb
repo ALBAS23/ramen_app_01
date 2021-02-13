@@ -4,6 +4,29 @@
   <img src="/images/ラーメン画像２.jpg">
 </section>
 <section class="container post-table">
+  <div class="post-search-group">
+    <div class="post-search-tables">
+      <div class="post-search-table category-group">
+        <select name="search-category" id="search-category-form" class="search-category">
+          <option value="1">キーワード検索</option>
+          <option value="2">値段</option>
+          <option value="3">ジャンル</option>
+          <option value="4">都道府県</option>
+        </select>
+      </div>
+      <div class="post-search-table input-group">
+        <input type="text" name="search-input" class="search-input" id="search-category-keyword" placeholder="キーワードを入力してください（例：大盛り）" >
+        <select name="search-category" class="search-category search-status-none" id="search-category-price">
+          <option value="">選択してください</option>
+          <option value="1">1000円以上</option>
+          <option value="2">1000円未満</option>
+        </select>
+      </div>
+      <div class="post-search-table search-bar-group">
+        <a href="#">検索</a>
+      </div>
+    </div>
+  </div>
   <div class="post-conditions">
     <div class="post-condition post-background" id="new-order">
       <div class="f-icon">

@@ -309,6 +309,70 @@ ul, li {
   text-align: left;
 }
 
+.post-search-group {
+  padding: 30px 5px 30px;
+  margin-bottom: 15px;
+}
+
+.post-search-tables {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  /* background-color: chocolate; */
+}
+
+.post-search-table {
+  border: 1px solid black;
+  border-right: none;
+}
+
+.category-group {
+  width: 25%;
+  
+  /* background-color: cornflowerblue; */
+}
+
+.search-category {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.6rem;
+  outline: 0;
+}
+
+.input-group {
+  width: 65%;
+  /* background-color: cyan; */
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  padding: 0 10px;
+  outline: 0;
+}
+
+.search-bar-group {
+  width: 10%;
+}
+
+.search-bar-group a {
+  background-color: #111111;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 17px 0;
+  font-size: 1.6rem;
+}
+
+.search-status-none {
+  display: none;
+}
+
 /* ******post-index****** */
 
 /* *******************post-new registration-new************************* */
