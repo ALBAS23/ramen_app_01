@@ -481,6 +481,11 @@ input[type="file"] {
   height: 100%;
 }
 
+.post-show-section a {
+  display: inline-block;
+  color: black;
+}
+
 /* ******user-show******** */
 
 .user-container {

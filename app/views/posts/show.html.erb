@@ -3,7 +3,10 @@
 <section class="container post-table">
   <div class="post-show-section post-group">
     <h1>
-      <a href="#" style="display: inline-block; color: black;"><%= @post.user.nickname %>さん</a>の投稿
+      <%= link_to "/person/#{@post.user.id}" do %>
+        <%= @post.user.nickname %>さん
+      <% end %>
+      の投稿
       <span>お気に入り数：
       <% if @post_favorite.blank? %>
         <span id="fa-heart-before"><i class="far fa-heart"></i></span>
