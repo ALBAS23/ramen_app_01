@@ -28,6 +28,7 @@
       <% @posts_created_at.each do |post| %>
         <%= render partial: 'posts/index_posts', locals: { post: post } %>
       <% end %>
+      <%= paginate @posts_created_at %>
     </div>
   </article>
   <article id="price-order-lists">

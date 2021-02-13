@@ -239,7 +239,7 @@ ul, li {
 .l-post {
   width: calc((100% - 30px) / 3);
   margin: 0 5px 30px;
-  height: 650px;
+  height: 670px;
   background-color: #f5f2e9;
 }
 
@@ -479,6 +479,11 @@ input[type="file"] {
 
 .post-show-picture img { 
   height: 100%;
+}
+
+.post-show-section a {
+  display: inline-block;
+  color: black;
 }
 
 /* ******user-show******** */
@@ -895,6 +900,20 @@ input[type="file"] {
   }
 
 /* ************************* favorites#index **************************** */
+
+/* ************************* pagination **************************** */
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.pagination span a {
+  color: black; 
+}
+
+/* ************************* pagination **************************** */
 
 .res {
   display: none;

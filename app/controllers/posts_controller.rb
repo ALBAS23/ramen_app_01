@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   before_action :move_to_root_path, only: [:edit, :update, :destroy]
 
   def index
-    @posts_created_at = Post.order("created_at DESC")
+    @posts_created_at = Post.order("created_at DESC").page(params[:page]).per(6)
     @posts_price = Post.order("price DESC")
   end
 
