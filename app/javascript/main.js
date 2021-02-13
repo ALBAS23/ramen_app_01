@@ -95,6 +95,21 @@ const favorite = () => {
   })
 };
 
+const search = () => {
+  const searchCategory = document.getElementById("search-category-form");
+  searchCategory.addEventListener('change', () => {
+    const text = searchCategory.selectedOptions[0].innerText
+    if (text == "キーワード検索") {
+      document.getElementById("search-category-keyword").classList.remove("search-status-none");
+      document.getElementById("search-category-price").classList.add("search-status-none");
+    } else if (text == "値段") {
+      document.getElementById("search-category-keyword").classList.add("search-status-none");
+      document.getElementById("search-category-price").classList.remove("search-status-none");
+    };
+  });
+};
+
 window.addEventListener('load', favorite);
 window.addEventListener('load', charCounter);
+window.addEventListener('load', search);
 
