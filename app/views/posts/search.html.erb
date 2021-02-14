@@ -1,0 +1,20 @@
+<%=render 'shared/header' %>
+
+<section class="container post-table">
+  <div class="post-search-group">
+    <%= form_with url: search_posts_path, method: :get, class: "post-search-tables", local: true do |form| %>
+      <%= render partial: 'posts/search_form', locals: { form: form } %>
+    <% end %>
+  </div>
+  <div class="post-group">
+    <h1>検索結果</h1>
+    <%= link_to '戻る', root_path, class: "post-btn" %>
+  </div>
+  <article>
+    <div class="table-container">
+       <% @search_results.each do |post| %>
+         <%= render partial: 'posts/index_posts', locals: { post: post } %>
+       <% end %>
+    </div>
+  <article>
+</section>
