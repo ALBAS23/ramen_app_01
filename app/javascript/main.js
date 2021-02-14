@@ -99,12 +99,12 @@ const search = () => {
   const searchCategory = document.getElementById("search-category-form");
   searchCategory.addEventListener('change', () => {
     const text = searchCategory.selectedOptions[0].innerText;
-    const keywordFree = document.getElementById("keyword_free");
+    const keywordStore = document.getElementById("keyword_store");
     const keywordPrice = document.getElementById("keyword_price");
     const keywordGenre = document.getElementById("keyword_genre");
     const keywordPrefecture = document.getElementById("keyword_prefecture");
     if (text == "キーワード検索") {
-      keywordFree.classList.remove("search-status-none");
+      keywordStore.classList.remove("search-status-none");
       keywordPrice.classList.add("search-status-none");
       keywordGenre.classList.add("search-status-none");
       keywordPrefecture.classList.add("search-status-none");
@@ -112,27 +112,27 @@ const search = () => {
       keywordGenre.value = "";
       keywordPrefecture.value = "";
     } else if (text == "値段") {
-      keywordFree.classList.add("search-status-none");
+      keywordStore.classList.add("search-status-none");
       keywordPrice.classList.remove("search-status-none");
       keywordGenre.classList.add("search-status-none");
       keywordPrefecture.classList.add("search-status-none");
-      keywordFree.value = "";
+      keywordStore.value = "";
       keywordGenre.value = "";
       keywordPrefecture.value = "";
     } else if (text == "ジャンル") {
-      keywordFree.classList.add("search-status-none");
+      keywordStore.classList.add("search-status-none");
       keywordPrice.classList.add("search-status-none");
       keywordGenre.classList.remove("search-status-none");
       keywordPrefecture.classList.add("search-status-none");
-      keywordFree.value = "";
+      keywordStore.value = "";
       keywordPrice.value = "";
       keywordPrefecture.value = "";
     } else if (text == "都道府県") {
-      keywordFree.classList.add("search-status-none");
+      keywordStore.classList.add("search-status-none");
       keywordPrice.classList.add("search-status-none");
       keywordGenre.classList.add("search-status-none");
       keywordPrefecture.classList.remove("search-status-none");
-      keywordFree.value = "";
+      keywordStore.value = "";
       keywordPrice.value = "";
       keywordGenre.value = "";
     }
