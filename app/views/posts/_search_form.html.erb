@@ -1,0 +1,17 @@
+<div class="post-search-table category-group">
+  <select name="search-category" id="search-category-form" class="search-category">
+    <option value="1">キーワード検索</option>
+    <option value="2">値段</option>
+    <option value="3">ジャンル</option>
+    <option value="4">都道府県</option>
+  </select>
+</div>
+<div class="post-search-table input-group">
+  <%= form.text_field :keyword_free, placeholder: "キーワードを入力してください（例：大盛り）", class: "search-category" %>
+  <%= form.select :keyword_price, { '1000円以上': 1000, '1000円未満': 999 }, { include_blank: '選択してください' }, { class: "search-category  search-status-none"} %>
+  <%= form.collection_select(:keyword_genre, Genre.all, :id, :name, { include_blank: '選択してください' }, { class: "search-category  search-status-none" }) %>
+  <%= form.collection_select(:keyword_prefecture, Prefecture.all, :id, :name, { include_blank: '選択してください' }, { class: "search-category  search-status-none" }) %>
+</div>
+<div class="post-search-table search-bar-group">
+  <%= form.submit '検索' %>
+</div>
