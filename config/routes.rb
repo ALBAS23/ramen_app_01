@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :posts do
     collection do
       get 'top'
+      get 'search'
     end
     resources :users do
       resources :favorites, only: [:create, :destroy]
