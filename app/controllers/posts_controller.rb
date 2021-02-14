@@ -52,6 +52,19 @@ class PostsController < ApplicationController
     end
   end
 
+  def search
+    if ! (params[:keyword_price].empty?)
+      @search_results = Post.search_price(params[:keyword_price]) 
+    elsif ! (params[:keyword_genre].empty?)
+      @search_results = Post.search_genre(params[:keyword_genre])
+    elsif ! (params[:keyword_prefecture].empty?)
+      @search_results = Post.search_prefecture(params[:keyword_prefecture])
+    elsif ! (params[:keyword_store].empty?)
+      @search_results = Post.search_store(params[:keyword_store])
+    end
+    render :search 
+  end
+
   private 
 
   def move_to_top_pages
