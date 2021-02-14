@@ -168,7 +168,7 @@ ul, li {
 }
 
 .post-background {
-  background-color: #f5f2e9;
+  background-color: #f5f2e92b;
 }
 
 .fa-calendar-alt, .fa-yen-sign{
@@ -329,25 +329,13 @@ ul, li {
 
 .category-group {
   width: 25%;
-  
-  /* background-color: cornflowerblue; */
-}
-
-.search-category {
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding-left: 10px;
-  font-size: 1.6rem;
-  outline: 0;
 }
 
 .input-group {
   width: 65%;
-  /* background-color: cyan; */
 }
 
-.search-input {
+.search-input, .search-category {
   border: none;
   width: 100%;
   height: 100%;
@@ -360,13 +348,16 @@ ul, li {
   width: 10%;
 }
 
-.search-bar-group a {
+.search-bar-group input[type="submit"] {
   background-color: #111111;
+  border: none;
+  color: #fff;
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 17px 0;
+  padding: 12px 0;
   font-size: 1.6rem;
+  cursor: grab;
 }
 
 .search-status-none {

@@ -98,14 +98,44 @@ const favorite = () => {
 const search = () => {
   const searchCategory = document.getElementById("search-category-form");
   searchCategory.addEventListener('change', () => {
-    const text = searchCategory.selectedOptions[0].innerText
+    const text = searchCategory.selectedOptions[0].innerText;
+    const keywordFree = document.getElementById("keyword_free");
+    const keywordPrice = document.getElementById("keyword_price");
+    const keywordGenre = document.getElementById("keyword_genre");
+    const keywordPrefecture = document.getElementById("keyword_prefecture");
     if (text == "キーワード検索") {
-      document.getElementById("search-category-keyword").classList.remove("search-status-none");
-      document.getElementById("search-category-price").classList.add("search-status-none");
+      keywordFree.classList.remove("search-status-none");
+      keywordPrice.classList.add("search-status-none");
+      keywordGenre.classList.add("search-status-none");
+      keywordPrefecture.classList.add("search-status-none");
+      keywordPrice.value = "";
+      keywordGenre.value = "";
+      keywordPrefecture.value = "";
     } else if (text == "値段") {
-      document.getElementById("search-category-keyword").classList.add("search-status-none");
-      document.getElementById("search-category-price").classList.remove("search-status-none");
-    };
+      keywordFree.classList.add("search-status-none");
+      keywordPrice.classList.remove("search-status-none");
+      keywordGenre.classList.add("search-status-none");
+      keywordPrefecture.classList.add("search-status-none");
+      keywordFree.value = "";
+      keywordGenre.value = "";
+      keywordPrefecture.value = "";
+    } else if (text == "ジャンル") {
+      keywordFree.classList.add("search-status-none");
+      keywordPrice.classList.add("search-status-none");
+      keywordGenre.classList.remove("search-status-none");
+      keywordPrefecture.classList.add("search-status-none");
+      keywordFree.value = "";
+      keywordPrice.value = "";
+      keywordPrefecture.value = "";
+    } else if (text == "都道府県") {
+      keywordFree.classList.add("search-status-none");
+      keywordPrice.classList.add("search-status-none");
+      keywordGenre.classList.add("search-status-none");
+      keywordPrefecture.classList.remove("search-status-none");
+      keywordFree.value = "";
+      keywordPrice.value = "";
+      keywordGenre.value = "";
+    }
   });
 };
 
