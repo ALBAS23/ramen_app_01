@@ -1139,7 +1139,7 @@ input[type="file"] {
 
   .container h1 {
     font-size: 2.0rem;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   .container h1::before {
@@ -1407,6 +1407,10 @@ input[type="file"] {
     font-size: 1.2rem;
   }
 
+  .container h1 span {
+    font-size: 1.2rem;
+  }
+
   /* +++++++++++++++++++++++++++++ person#show +++++++++++++++++++++++++++++++ */
 
   /* +++++++++++++++++++++++++++++ person#edit +++++++++++++++++++++++++++++++ */
@@ -1639,6 +1643,10 @@ input[type="file"] {
 
  .post-btn-edit {
    right: 80px;
+ }
+
+ .container h1 span {
+   font-size: 1.4rem;
  }
 
  /* +++++++++++++++++++++++++++++ posts#show +++++++++++++++++++++++++++++++ */
