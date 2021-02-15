@@ -1746,6 +1746,7 @@ input[type="file"] {
 
 .profile-container {
   width: 100%;
+  padding: 10px 0 20px;
 }
 
 .profile-category-group {
@@ -1800,6 +1801,19 @@ input[type="file"] {
  }
 
   /* +++++++++++++++++++++++++++++ user#registrations +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ favorites#index  +++++++++++++++++++++++++++++++ */
+ 
+  .profile-favorite-container {
+   border: none;
+   padding: 0 10px 10px;
+ }
+
+ .f-post {
+  width: calc((100% - 20px) / 2);
+ }
+
+  /* +++++++++++++++++++++++++++++ favorites#index  +++++++++++++++++++++++++++++++ */
 }
 
 /* ************************メディアクエリ（タブレット対応）*************************** */
