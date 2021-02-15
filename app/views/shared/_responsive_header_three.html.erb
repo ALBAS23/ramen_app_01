@@ -3,8 +3,8 @@
 <div class="res modal-wrapper" id="modal-menus-show">
   <nav class="res modal-menus">
     <p class="res modal-menu"><span><%= current_user.nickname %>さんのマイページ</span></p>
-    <%= link_to '投稿履歴', new_post_path, class: "res modal-menu" %>
-    <%= link_to 'お気に入り', new_post_path, class: "res modal-menu" %>
+    <%= link_to '投稿履歴', "/person/#{current_user.id}/mypost", class: "res modal-menu" %>
+    <%= link_to 'お気に入り', "/person/#{current_user.id}/favorites", class: "res modal-menu" %>
     <%= link_to '新規投稿', new_post_path, class: "res modal-menu" %>
     <%= link_to '投稿一覧', root_path, class: "res modal-menu" %>
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "res modal-menu" %>
