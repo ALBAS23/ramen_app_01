@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   def index
     @posts_created_at = Post.order("created_at DESC").page(params[:page]).per(6)
-    @posts_price = Post.order("price DESC")
+    @posts_price = Post.order("price DESC").page(params[:page]).per(6)
   end
 
   def top
