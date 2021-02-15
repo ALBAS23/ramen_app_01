@@ -1,6 +1,6 @@
 class PersonController < ApplicationController
 
-  before_action :user_data, only: [:show, :edit]
+  before_action :user_data, only: [:show, :edit, :mypost]
   before_action :move_to_root_path, only: :edit
 
   def show
