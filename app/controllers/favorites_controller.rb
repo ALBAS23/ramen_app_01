@@ -2,6 +2,7 @@ class FavoritesController < ApplicationController
   
   def index
     @posts_created_at = Favorite.where(user_id: params[:person_id]).order("created_at DESC")
+    @user = User.find(params[:person_id])
   end
   
   def create

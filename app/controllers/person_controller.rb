@@ -34,6 +34,7 @@ class PersonController < ApplicationController
 
   def mypost
     @person_created_at = User.find(params[:id]).posts.order("created_at DESC")
+    @user = User.find(params[:id])
     render :mypost
   end
 
