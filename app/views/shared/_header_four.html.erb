@@ -4,9 +4,9 @@
   <% end %>
   <div class="header-right">
     <nav class="session-group">
-      <p><%= @user.nickname %>さんのマイページ</p>
+      <p><%= user.nickname %>さんのマイページ</p>
     </nav>
   </div>
 
-  <%= render 'shared/responsive_header_four' %>
+  <%= render partial: 'shared/responsive_header_four', locals: { user: user } %>
 </header>
