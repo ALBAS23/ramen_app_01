@@ -139,7 +139,13 @@ const search = () => {
   });
 };
 
+const errors = () => {
+  const errorCounter = document.getElementById("error-counts");
+  const errorLists = document.getElementsByClassName("error-message");
+  errorCounter.innerText = errorLists.length;
+};
+
 window.addEventListener('load', favorite);
 window.addEventListener('load', charCounter);
 window.addEventListener('load', search);
-
+window.addEventListener('load', errors);
