@@ -1,6 +1,6 @@
 class PersonController < ApplicationController
 
-  before_action :user_data, only: [:show, :edit, :mypost]
+  before_action :user_data, only: [:show, :edit, :update, :mypost]
   before_action :move_to_root_path, only: :edit
 
   def show
@@ -15,7 +15,7 @@ class PersonController < ApplicationController
   end
 
   def update
-    if User.find(params[:id]).person.blank?
+    if @user.person.blank?
       @person = Person.new(person_params)
       if @person.save
         redirect_to "/person/#{params[:id]}"
