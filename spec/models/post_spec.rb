@@ -6,7 +6,12 @@ RSpec.describe Post, type: :model do
   end
 
   context '新規投稿できる' do
-    
+    it '全ての必須情報（メニュー, 店舗名, 値段, ジャンル, ひとコト, 都道府県）が入力されている場合、新規投稿できる' do
+      expect(@post).to be_valid
+    end
+    it '画像が新規投稿できる' do
+      @post.image.attach(io: File.open('public/images/ラーメン画像１.jpg'), filename: 'ラーメン画像１.jpg')
+    end 
   end
 
   context '新規投稿できない' do
