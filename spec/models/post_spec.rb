@@ -11,6 +11,7 @@ RSpec.describe Post, type: :model do
     end
     it '画像が新規投稿できる' do
       @post.image.attach(io: File.open('public/images/ラーメン画像１.jpg'), filename: 'ラーメン画像１.jpg')
+      expect(@post).to be_valid
     end 
   end
 
