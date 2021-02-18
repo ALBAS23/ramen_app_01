@@ -5,6 +5,10 @@ RSpec.describe Post, type: :model do
     @post = FactoryBot.build(:post)
   end
 
+  context '新規投稿できる' do
+    
+  end
+
   context '新規投稿できない' do
     it 'メニューが空の場合、新規投稿できない' do
       @post.menu = nil
