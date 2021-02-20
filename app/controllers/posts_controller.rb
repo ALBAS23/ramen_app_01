@@ -5,12 +5,11 @@ class PostsController < ApplicationController
   before_action :move_to_root_path, only: [:edit, :update, :destroy]
 
   def index
-    @posts_created_at = Post.order("created_at DESC").page(params[:page]).per(6)
-    @posts_price = Post.order("price DESC").page(params[:page]).per(6)
+    @posts_created_at = Post.order('created_at DESC').page(params[:page]).per(6)
+    @posts_price = Post.order('price DESC').page(params[:page]).per(6)
   end
 
   def top
-
   end
 
   def new
@@ -32,11 +31,10 @@ class PostsController < ApplicationController
     @post_favorite = @post_favorite[0]
   end
 
-  def edit 
-
+  def edit
   end
 
-  def update 
+  def update
     if @post.update(post_params)
       redirect_to root_path
     else
@@ -53,30 +51,26 @@ class PostsController < ApplicationController
   end
 
   def search
-    if ! (params[:keyword_price].empty?)
-      @search_results = Post.search_price(params[:keyword_price]) 
-    elsif ! (params[:keyword_genre].empty?)
+    if !params[:keyword_price].empty?
+      @search_results = Post.search_price(params[:keyword_price])
+    elsif !params[:keyword_genre].empty?
       @search_results = Post.search_genre(params[:keyword_genre])
-    elsif ! (params[:keyword_prefecture].empty?)
+    elsif !params[:keyword_prefecture].empty?
       @search_results = Post.search_prefecture(params[:keyword_prefecture])
-    elsif ! (params[:keyword_store].empty?)
+    elsif !params[:keyword_store].empty?
       @search_results = Post.search_store(params[:keyword_store])
     end
-    render :search 
+    render :search
   end
 
-  private 
+  private
 
   def move_to_top_pages
-    unless user_signed_in?
-      redirect_to top_posts_path 
-    end
+    redirect_to top_posts_path unless user_signed_in?
   end
 
   def move_to_root_path_top
-    if user_signed_in?
-      redirect_to root_path
-    end
+    redirect_to root_path if user_signed_in?
   end
 
   def post_data
@@ -84,12 +78,11 @@ class PostsController < ApplicationController
   end
 
   def move_to_root_path
-    unless @post.user.id == current_user.id
-      redirect_to root_path
-    end
+    redirect_to root_path unless @post.user.id == current_user.id
   end
 
   def post_params
-    params.require(:post).permit(:menu, :store, :price, :genre_id, :word, :prefecture_id, :place, :image).merge(user_id: current_user.id)
+    params.require(:post).permit(:menu, :store, :price, :genre_id, :word, :prefecture_id, :place,
+                                 :image).merge(user_id: current_user.id)
   end
 end

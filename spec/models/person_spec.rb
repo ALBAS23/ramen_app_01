@@ -15,7 +15,7 @@ RSpec.describe Person, type: :model do
         expect(@person).to be_valid
       end
       it '自己紹介文を登録する場合、文字数が400字以内であれば、登録できる' do
-        @person.self_introduction = Faker::Lorem.characters(number: 400) 
+        @person.self_introduction = Faker::Lorem.characters(number: 400)
         expect(@person).to be_valid
       end
       it '全ての情報が入力されている場合、マイページ情報を登録できる' do
@@ -27,27 +27,27 @@ RSpec.describe Person, type: :model do
       it 'お気に入り店舗①が空の場合、登録できない' do
         @person.f_store_one = nil
         @person.valid?
-        expect(@person.errors.full_messages).to include("お気に入り店舗①を必ず入力してください")
+        expect(@person.errors.full_messages).to include('お気に入り店舗①を必ず入力してください')
       end
       it '好きなジャンルが空（ genre_id = 1 ）の場合、登録できない' do
         @person.genre_id = 1
         @person.valid?
-        expect(@person.errors.full_messages).to include("好きなジャンルを必ず入力してください")
+        expect(@person.errors.full_messages).to include('好きなジャンルを必ず入力してください')
       end
-      it '好きなトッピングが空の場合、登録できない' do 
+      it '好きなトッピングが空の場合、登録できない' do
         @person.f_topping = nil
         @person.valid?
-        expect(@person.errors.full_messages).to include("好きなトッピングを必ず入力してください")
+        expect(@person.errors.full_messages).to include('好きなトッピングを必ず入力してください')
       end
       it '自己紹介文が401文字以上の場合、登録できない' do
         @person.self_introduction = Faker::Lorem.characters(number: 401)
         @person.valid?
-        expect(@person.errors.full_messages).to include("自己紹介文は400文字以下で入力してください")
+        expect(@person.errors.full_messages).to include('自己紹介文は400文字以下で入力してください')
       end
       it 'ユーザーモデルに紐付いていない場合、登録できない' do
         @person.user = nil
         @person.valid?
-        expect(@person.errors.full_messages).to include("Userを入力してください")
+        expect(@person.errors.full_messages).to include('Userを入力してください')
       end
     end
   end
