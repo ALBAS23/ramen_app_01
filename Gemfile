@@ -66,3 +66,4 @@ gem 'rails-i18n'
 gem 'omniauth', '~>1.9.1'
 gem 'omniauth-google-oauth2'
 gem 'kaminari'
+gem 'aws-sdk-s3', require: false
