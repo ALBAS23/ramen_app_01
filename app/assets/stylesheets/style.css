@@ -970,6 +970,23 @@ input[type="file"] {
 
 /* ************************* pagination **************************** */
 
+/* ************************* footer **************************** */
+
+footer {
+  margin-top: 10px;
+  height: 100px;
+  background-color: #282828;
+  text-align: center;
+  
+}
+
+.corporate {
+  color: #fff;
+  padding: 45px;
+}
+
+/* ************************* footer **************************** */
+
 .res {
   display: none;
 }
