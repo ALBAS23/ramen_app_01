@@ -969,6 +969,22 @@ input[type="file"] {
 }
 
 /* ************************* pagination **************************** */
+/* ************************* footer **************************** */
+
+footer {
+  margin-top: 30px;
+  height: 100px;
+  background-color: #282828;
+  text-align: center;
+  
+}
+
+.corporate {
+  color: #fff;
+  padding: 43px 0;
+}
+
+/* ************************* footer **************************** */
 
 .res {
   display: none;
@@ -1477,6 +1493,25 @@ input[type="file"] {
    
      /* +++++++++++++++++++++++++++++ favorites#index  +++++++++++++++++++++++++++++++ */
 
+
+    /* +++++++++++++++++++++++++++++ footer  +++++++++++++++++++++++++++++++ */
+
+     footer {
+      margin-top: 10px;
+      height: 60px;
+      background-color: #282828;
+      text-align: center;
+      
+    }
+    
+    .corporate {
+      color: #fff;
+      padding: 25px 0;
+      font-size: 1.0rem;
+    }
+
+    /* +++++++++++++++++++++++++++++ footer  +++++++++++++++++++++++++++++++ */
+
 }
 
 
@@ -1835,6 +1870,25 @@ input[type="file"] {
  }
 
   /* +++++++++++++++++++++++++++++ favorites#index  +++++++++++++++++++++++++++++++ */
+
+  /* +++++++++++++++++++++++++++++ footer  +++++++++++++++++++++++++++++++ */
+
+  footer {
+    margin-top: 10px;
+    height: 80px;
+    background-color: #282828;
+    text-align: center;
+    
+  }
+  
+  .corporate {
+    color: #fff;
+    padding: 34px 0;
+    font-size: 1.2rem;
+  }
+
+  /* +++++++++++++++++++++++++++++ footer  +++++++++++++++++++++++++++++++ */
+
 }
 
 /* ************************メディアクエリ（タブレット対応）*************************** */
