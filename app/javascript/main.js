@@ -103,14 +103,16 @@ const search = () => {
     const keywordPrice = document.getElementById("keyword_price");
     const keywordGenre = document.getElementById("keyword_genre");
     const keywordPrefecture = document.getElementById("keyword_prefecture");
-    if (text == "キーワード検索") {
-      keywordStore.classList.remove("search-status-none");
-      keywordPrice.classList.add("search-status-none");
-      keywordGenre.classList.add("search-status-none");
-      keywordPrefecture.classList.add("search-status-none");
-      keywordPrice.value = "";
-      keywordGenre.value = "";
-      keywordPrefecture.value = "";
+    if (text == "店名") {
+      const parameter1 = []
+      barChange()
+      // keywordStore.classList.remove("search-status-none");
+      // keywordPrice.classList.add("search-status-none");
+      // keywordGenre.classList.add("search-status-none");
+      // keywordPrefecture.classList.add("search-status-none");
+      // keywordPrice.value = "";
+      // keywordGenre.value = "";
+      // keywordPrefecture.value = "";
     } else if (text == "値段") {
       keywordStore.classList.add("search-status-none");
       keywordPrice.classList.remove("search-status-none");
@@ -138,6 +140,18 @@ const search = () => {
     }
   });
 };
+
+const barChange = (parameter1, parameter2) => {
+
+  parameter1.forEach((parameter) => {
+    parameter.classList.add("search-status-none");
+    parameter.value = "";
+  })
+  parameter2.forEach((parameter) => {
+    parameter.classList.remove("search-status-none");
+  })
+
+}
 
 const errors = () => {
   const errorCounter = document.getElementById("error-counts");

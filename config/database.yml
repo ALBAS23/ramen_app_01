@@ -50,6 +50,8 @@ test:
 production:
   <<: *default
   database: ramen_app_01_production
+  # username: ramen_app_01
+  # password: <%= ENV['RAMEN_APP_01_DATABASE_PASSWORD'] %>
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
