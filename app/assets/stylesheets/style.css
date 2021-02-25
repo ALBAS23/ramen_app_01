@@ -1130,6 +1130,14 @@ footer {
     font-size: 1.2rem;
   }
 
+  .login-session-bottom {
+    margin-top: 30px;
+  }
+
+  .login-session-bottom .btn {
+    width: 245px;
+  }
+
   .fa-sign-in-alt, .fa-hand-spock {
     font-size: 1.2rem;
   }
@@ -1586,6 +1594,14 @@ footer {
     padding: 15px 0;
     margin: 0 20px;
     font-size: 1.4rem;
+  }
+
+  .login-session-bottom {
+    margin-top: 30px;
+  }
+
+  .login-session-bottom .btn {
+    width: 340px;
   }
 
   .fa-sign-in-alt, .fa-hand-spock {
