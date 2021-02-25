@@ -14,5 +14,11 @@
         <i class="far fa-hand-spock"></i>初めての方
       <% end %>
     </div>
+    <div class="login-session login-session-bottom">
+      <%= link_to users_guest_sign_in_path, method: :post, class: "btn new-login" do %>
+        <i class="fas fa-sign-in-alt"></i>ゲストユーザーでログインする
+      <% end %> 
+      
+    </div>
   </div>
 </div>
