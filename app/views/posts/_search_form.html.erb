@@ -8,7 +8,7 @@
 </div>
 <div class="post-search-table input-group">
   <%= form.text_field :keyword_store, placeholder: "キーワードを入力してください（例：らあめん花月嵐）", class: "search-category" %>
-  <%= form.select :keyword_price, { '1000円以上': 1000, '999円未満': 999 }, { include_blank: '選択してください' }, { class: "search-category  search-status-none"} %>
+  <%= form.select :keyword_price, { '1000円以上': 1000, '900円以上1000円未満': 900, '800円以上900円未満': 800, '800円未満': 0 }, { include_blank: '選択してください' }, { class: "search-category  search-status-none"} %>
   <%= form.collection_select(:keyword_genre, Genre.all, :id, :name, { include_blank: '選択してください' }, { class: "search-category  search-status-none" }) %>
   <%= form.collection_select(:keyword_prefecture, Prefecture.all, :id, :name, { include_blank: '選択してください' }, { class: "search-category  search-status-none" }) %>
 </div>

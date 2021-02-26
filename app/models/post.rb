@@ -19,10 +19,14 @@ class Post < ApplicationRecord
   validates :prefecture_id, numericality: { other_than: 1, message: 'は必ず入力してください' }
 
   def self.search_price(keyword)
-    if keyword.to_i < 1000
-      Post.where(' price < ? ', keyword.to_i).order('price DESC')
+    if keyword.to_i == 1000
+      Post.where(' ? <= price ', keyword.to_i).order('price DESC')
+    elsif keyword.to_i == 900
+      Post.where(' ? <= price && price < 1000 ', keyword.to_i).order('price DESC')
+    elsif keyword.to_i == 800
+      Post.where(' ? <= price && price < 900 ', keyword.to_i).order('price DESC')
     else
-      Post.where(' price >= ? ', keyword.to_i).order('price DESC')
+      Post.where(' ? <= price && price < 800 ', keyword.to_i).order('price DESC')
     end
   end
 
