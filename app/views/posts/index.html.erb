@@ -5,6 +5,7 @@
 </section>
 <section class="container post-table">
   <div class="post-search-group">
+    <h2>キーワード（店名・値段・ジャンル・都道府県別）検索</h2>
     <%= form_with url: search_posts_path, method: :get, class: "post-search-tables", local: true do |form| %>
       <%= render partial: 'posts/search_form', locals: { form: form } %>
     <% end %>
