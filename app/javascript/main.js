@@ -103,55 +103,36 @@ const search = () => {
     const keywordPrice = document.getElementById("keyword_price");
     const keywordGenre = document.getElementById("keyword_genre");
     const keywordPrefecture = document.getElementById("keyword_prefecture");
+    const barChange = (parameter1, parameter2) => {
+
+      parameter1.forEach((parameter) => {
+        parameter.classList.add("search-status-none");
+        parameter.value = "";
+      });
+      parameter2.forEach((parameter) => {
+        parameter.classList.remove("search-status-none");
+      });
+    
+    };
     if (text == "店名") {
-      const parameter1 = []
-      barChange()
-      // keywordStore.classList.remove("search-status-none");
-      // keywordPrice.classList.add("search-status-none");
-      // keywordGenre.classList.add("search-status-none");
-      // keywordPrefecture.classList.add("search-status-none");
-      // keywordPrice.value = "";
-      // keywordGenre.value = "";
-      // keywordPrefecture.value = "";
+      const parameter1 = [keywordPrice, keywordGenre, keywordPrefecture];
+      const parameter2 = [keywordStore];
+      barChange(parameter1, parameter2);
     } else if (text == "値段") {
-      keywordStore.classList.add("search-status-none");
-      keywordPrice.classList.remove("search-status-none");
-      keywordGenre.classList.add("search-status-none");
-      keywordPrefecture.classList.add("search-status-none");
-      keywordStore.value = "";
-      keywordGenre.value = "";
-      keywordPrefecture.value = "";
+      const parameter1 = [keywordStore, keywordGenre, keywordPrefecture];
+      const parameter2 = [keywordPrice];
+      barChange(parameter1, parameter2);
     } else if (text == "ジャンル") {
-      keywordStore.classList.add("search-status-none");
-      keywordPrice.classList.add("search-status-none");
-      keywordGenre.classList.remove("search-status-none");
-      keywordPrefecture.classList.add("search-status-none");
-      keywordStore.value = "";
-      keywordPrice.value = "";
-      keywordPrefecture.value = "";
+      const parameter1 = [keywordStore, keywordPrice, keywordPrefecture];
+      const parameter2 = [keywordGenre];
+      barChange(parameter1, parameter2);
     } else if (text == "都道府県") {
-      keywordStore.classList.add("search-status-none");
-      keywordPrice.classList.add("search-status-none");
-      keywordGenre.classList.add("search-status-none");
-      keywordPrefecture.classList.remove("search-status-none");
-      keywordStore.value = "";
-      keywordPrice.value = "";
-      keywordGenre.value = "";
+      const parameter1 = [keywordStore, keywordGenre, keywordPrice];
+      const parameter2 = [keywordPrefecture];
+      barChange(parameter1, parameter2);
     }
   });
 };
-
-const barChange = (parameter1, parameter2) => {
-
-  parameter1.forEach((parameter) => {
-    parameter.classList.add("search-status-none");
-    parameter.value = "";
-  })
-  parameter2.forEach((parameter) => {
-    parameter.classList.remove("search-status-none");
-  })
-
-}
 
 const errors = () => {
   const errorCounter = document.getElementById("error-counts");
